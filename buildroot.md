@@ -1,7 +1,8 @@
 #### Buildroot
 
-Очистка
+
 ```bash
+# Очистка
 $ sudo make clean
 ```
 Выбор типовой конфигурации ARM для QEMU
