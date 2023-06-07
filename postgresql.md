@@ -48,6 +48,7 @@ postgres=# create database test2;
 # Запросы
 postgres=# insert into users (Name, Age) values ('Tom', 33);
 postgres=# select * from users;
+postgres=# DELETE FROM objects WHERE id = 4;
 
 # Выгрузка базы в файл
 $ pg_dump -U username -f backup.dump database_name -Fc
