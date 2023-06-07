@@ -8,6 +8,7 @@ $ sudo apt-get install automake bison chrpath flex g++ git gperf gawk libexpat1-
 $ tar xf crosstool-ng-1.20.0.tar.bz2
 $ cd crosstool-ng-1.20.0
 $ ./configure --enable-local
+$ sudo apt install libtool-bin libtool-doc      # при ошибке: configure: error: Required tool not found: libtool
 $ make
 $ make install
 
