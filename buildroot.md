@@ -23,6 +23,10 @@ $ sudo make -j4	    # количество ядер в процессоре дл
 # После сборки бинарные файлы лежат здесь
 $ ls output/images
 
+# Запуск Linux после сборки в QEMU
+$ cd output/images
+$ sudo ./start-qemu.sh
+
 # Меню конфигурайии Linux kernel
 $ sudo make linux-menuconfig
 
