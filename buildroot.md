@@ -2,6 +2,11 @@
 
 
 ```bash
+# Установка Buildroot
+git clone git://git.buildroot.net/buildroot
+cd buildroot
+git checkout 2023.02.1
+
 # Очистка
 $ sudo make clean
 
@@ -11,14 +16,38 @@ $ sudo make qemu_arm_versatile_defconfig
 # Меню конфигурайии Buildroot
 $ sudo make menuconfig
  
-# Меню конфигурайии Linux kernel
-$ sudo make linux-menuconfig
-
 # Запуск сборки
 $ sudo make 
 
+# Меню конфигурайии Linux kernel
+$ sudo make linux-menuconfig
+
+# Меню конфигурайии BusyBox
+$ sudo make busybox-menuconfig
+
+# Сборка BusyBox
+$ sudo make busybox
+
+# Показать список целей
+$ sudo make show-targets
+
 
  
+```
+
+Установить строку приглашения ввода на [user@hostname]:currentpath$:  
+В файле  /etc/profile 
+```
+PS1='[\u@\h]:\w$:'
+export PS1
+
+# if [ "$PS1" ]; then
+# 	if [ "`id -u`" -eq 0 ]; then
+# 		export PS1='# '
+# 	else
+# 		export PS1='$ '
+# 	fi
+# fi
 ```
 
 Для передачи файлов в QEMU:
@@ -32,5 +61,15 @@ File systems -> FUSE (Filesystem in Userspace) support
 
 # Монтирование файловой систему хоста в QEMU (вводится в QEMU)
 $ sshfs -o allow_other,default_permissions <username>@10.0.2.2:<host path> /mnt
+```
+Параметры процессора:
+```
+Target options
+	-> Target Architecture 			= ARM (little endian)
+	-> Target Binary Format 		= ELF
+	-> Target Architecture Variant 	= cortex-A7
+	-> Target ABI 					= EABIhf
+	-> Floating point strategy 		= NEON/VFPv4
+	-> ARM instruction set 			= Thumb2
 ```
 
