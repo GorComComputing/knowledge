@@ -1,9 +1,9 @@
 # knowledge
 [LXC](https://github.com/GorComComputing/knowledge)
 
-\```python
+```python
 print("Привет, мир!")
-\```
+```
 
 
 #### LXC (Linux Container)
