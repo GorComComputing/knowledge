@@ -23,5 +23,7 @@ $ sudo lxc-attach myapp
 
 # 6. посмотреть файловую систему контейнера
 $ ls -al /var/lib/lxc/myapp/rootfs
- 
+
+# Сменить пользователя в контейнере
+$ su - goryachev
 ```
