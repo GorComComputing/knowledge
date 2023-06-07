@@ -23,7 +23,7 @@ $ ./ct-ng arm-cortex_a8-linux-gnueabi
 # Редактировать конфигурацию
 $ ./ct-ng menuconfig
 
-#Собрать компилятор
+# Собрать компилятор
 $ ./ct-ng build
 $ PATH=~/x-tools/arm-cortex_a8-linux-gnueabihf/bin:$PATH
 
