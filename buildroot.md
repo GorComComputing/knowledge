@@ -21,4 +21,10 @@ $ sudo make
 $ sshfs -o allow_other,default_permissions <username>@10.0.2.2:<host path> /mnt
  
 ```
+```
+# Параметры конфигурации Buildroot
+Target packages -> Filesystem and flash utilities -> sshfs (FUSE)
+# enable it to be built as an inbuilt module (* instead of M in menuconfig)
+File systems -> FUSE (Filesystem in Userspace) support 
+```
 
