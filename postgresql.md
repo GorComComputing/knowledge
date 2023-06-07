@@ -12,9 +12,9 @@ $ sudo -i -u postgres
 # Запуск PostgreSQL
 $ psql
 # Посмотреть информацию о саединении
-\conninfo
+postgres=# \conninfo
 # Выход
-\q
+postgres=# \q
 
 # Создание пользователя
 $ createuser --interactive
@@ -31,12 +31,28 @@ $ psql
 $ psql -d postgres
 
 # Создание таблицы
-CREATE TABLE имя_таблицы (имя_колонки1 тип_колонки (длина) ограничения, имя_колонки2 тип_колонки (длина), имя_колонки3 тип_колонки (длина));
+postgres=# CREATE TABLE имя_таблицы (имя_колонки1 тип_колонки (длина) ограничения, имя_колонки2 тип_колонки (длина), имя_колонки3 тип_колонки (длина));
 
-CREATE TABLE playground (equip_id serial PRIMARY KEY, type varchar (50) NOT NULL, color varchar (25) NOT NULL, location varchar(25) check (location in ('north', 'south', 'west', 'east', 'northeast', 'southeast', 'southwest', 'northwest')), install_date date );
+postgres=# CREATE TABLE playground (equip_id serial PRIMARY KEY, type varchar (50) NOT NULL, color varchar (25) NOT NULL, location varchar(25) check (location in ('north', 'south', 'west', 'east', 'northeast', 'southeast', 'southwest', 'northwest')), install_date date );
+
+postgres=# create table users (Id serial primary key, Name character varying(30), Age integer);
 
 # Отобразить таблицы
-\dt
+postgres=# \dt
+
+# Подключение к базе 
+postgres=# \c test2
+# Создание базы
+postgres=# create database test2;
+
+# Запросы
+postgres=# insert into users (Name, Age) values ('Tom', 33);
+postgres=# select * from users;
+
+# Выгрузка базы в файл
+$ pg_dump -U username -f backup.dump database_name -Fc
+# Восстановленеи базы из файла
+$ pg_restore -U username -d dbname -1 filename.dump
 
 
 ```
