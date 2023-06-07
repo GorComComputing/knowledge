@@ -38,6 +38,9 @@ $ sudo make busybox
 
 # Показать список целей
 $ sudo make show-targets
+
+# Показать список возможных конфигураций
+$ sudo make list-defconfigs
 ```
 
 Установить приглашение ввода [user@hostname]:currentpath$:  
