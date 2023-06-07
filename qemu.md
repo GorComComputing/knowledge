@@ -13,3 +13,5 @@ $ sudo apt install qemu-kvm qemu
 
 $ sudo apt install virt-manager
 ```
+
+`Ctrl+A+X - Выход из QEMU в терминале`
