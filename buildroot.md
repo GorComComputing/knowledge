@@ -16,6 +16,9 @@ $ sudo make linux-menuconfig
 
 # Запуск сборки
 $ sudo make 
+
+# Монтирование файловой систему хоста в QEMU (вводится в QEMU)
+$ sshfs -o allow_other,default_permissions <username>@10.0.2.2:<host path> /mnt
  
 ```
 
