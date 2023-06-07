@@ -51,3 +51,8 @@ Target options --->
 C-library --->
       extra config (--enable-obsolete-rpc)
 ```
+В файле ./config заменить текущую версию 'zlib-1.2.12' на 'zlib-1.2.13'
+```
+$ vi ./config
+```
+
