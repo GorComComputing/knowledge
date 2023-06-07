@@ -12,6 +12,7 @@ $ rm -r     # удалить (ключ -r рекурсивно для катал
 $ openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout key.pem -out cert.pem   # генерирует файлы ключей HTTPS
 $ su - goryachev  # Сменить пользователя
 $ su -            # Сменить пользователя на root
+$ ps        # показать список процессов
 
 
 $ ip a      # узнать ip-адрес
