@@ -13,6 +13,9 @@ $ sudo make menuconfig
  
 # Меню конфигурайии Linux kernel
 $ sudo make linux-menuconfig
+
+# Запуск сборки
+$ sudo make 
  
 ```
 
