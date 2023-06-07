@@ -56,7 +56,7 @@ Target packages -> Filesystem and flash utilities -> sshfs (FUSE)
 # enable it to be built as an inbuilt module (* instead of M in menuconfig)
 File systems -> FUSE (Filesystem in Userspace) support 
 
-# Монтирование файловой систему хоста в QEMU (вводится в QEMU)
+# Монтирование файловой системы хоста в QEMU (вводится в QEMU)
 $ sshfs -o allow_other,default_permissions <username>@10.0.2.2:<host path> /mnt
 ```
 Параметры процессора:
