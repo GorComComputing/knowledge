@@ -24,6 +24,10 @@ $ sudo lxc-attach myapp
 # 6. посмотреть файловую систему контейнера
 $ ls -al /var/lib/lxc/myapp/rootfs
 
+# Копирование файла в контейнер work
+$ sudo cp buildroot-2023.02.1.tar.gz /var/lib/lxc/work/rootfs/home/goryachev/embd/buildroot-2023.02.1.tar.gz
+
+
 # Сменить пользователя в контейнере
 $ su - goryachev
 ```
