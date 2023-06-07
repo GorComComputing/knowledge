@@ -42,3 +42,12 @@ $ arm-cortex_a8-linux-gnueabihf-gcc --version
 
 $ arm-cortex_a8-linux-gnueabihf-gcc -v
 ```
+Параметры в $ ./ct-ng menuconfig
+```
+Paths and misc options --->
+      [ ] Render the toolchain read-only
+Target options --->
+      Floating point (hardware(FPU))
+C-library --->
+      extra config (--enable-obsolete-rpc)
+```
