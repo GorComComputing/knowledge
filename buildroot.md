@@ -3,9 +3,9 @@
 
 ```bash
 # Установка Buildroot
-git clone git://git.buildroot.net/buildroot
-cd buildroot
-git checkout 2023.02.1
+$ git clone git://git.buildroot.net/buildroot
+$ cd buildroot
+$ git checkout 2023.02.1
 
 # Очистка
 $ sudo make clean
