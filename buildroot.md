@@ -30,13 +30,10 @@ $ sudo make busybox
 
 # Показать список целей
 $ sudo make show-targets
-
-
- 
 ```
 
-Установить строку приглашения ввода на [user@hostname]:currentpath$:  
-В файле  /etc/profile 
+Установить приглашение ввода [user@hostname]:currentpath$:  
+в файле /etc/profile 
 ```
 PS1='[\u@\h]:\w$:'
 export PS1
@@ -67,8 +64,8 @@ $ sshfs -o allow_other,default_permissions <username>@10.0.2.2:<host path> /mnt
 Target options
 	-> Target Architecture 			= ARM (little endian)
 	-> Target Binary Format 		= ELF
-	-> Target Architecture Variant 	= cortex-A7
-	-> Target ABI 					= EABIhf
+	-> Target Architecture Variant 		= cortex-A7
+	-> Target ABI 				= EABIhf
 	-> Floating point strategy 		= NEON/VFPv4
 	-> ARM instruction set 			= Thumb2
 ```
