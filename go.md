@@ -16,3 +16,5 @@ $ go build main.go
 # Подключение пакетов
 go get github.com/lib/pq
 ```
+
+Среда разработки для Go: LiteIDE
