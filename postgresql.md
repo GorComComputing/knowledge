@@ -54,5 +54,6 @@ $ pg_dump -U username -f backup.dump database_name -Fc
 # Восстановленеи базы из файла
 $ pg_restore -U username -d dbname -1 filename.dump
 
-
+# Изменение пароля пользователя
+postgres=# ALTER ROLE saeed_raza WITH PASSWORD ‘data’;
 ```
