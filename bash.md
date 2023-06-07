@@ -25,3 +25,14 @@ $ cat /proc/meminfo # информация о памяти
 $ ping -c 3 google.com       # проверка подключения к интернету
 $ curl -I https://google.com # проверка подключения к интернету
 ```
+Чтобы освободить место в коневой файловой системе
+```
+# Очистить кеш /var/cache/apt/archives 
+$ sudo apt-get clean    
+
+# Таким образом файлы /var будут лежать в разделе /home, а из корня на /home/var будет вести симлинк. Выберите вместо /var то, что у вас больше весит, но лучше не /bin и не /usr
+$ mkdir /home/var
+$ cp -R /var/* /home/var
+$ rm -R /var
+$ ln -s /home/var /var
+```
