@@ -18,6 +18,10 @@ $ sudo make menuconfig
  
 # Запуск сборки
 $ sudo make 
+$ sudo make -j4	    # количество ядер в процессоре для ускорения сборки
+
+# После сборки бинарные файлы лежат здесь
+$ ls output/images
 
 # Меню конфигурайии Linux kernel
 $ sudo make linux-menuconfig
