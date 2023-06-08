@@ -43,3 +43,7 @@ $ sudo cp -R /var/* /home/var
 $ rm -R /var
 $ ln -s /home/var /var
 ```
+Показать скрытые папки и файлы в окне
+```
+Ctrl+H
+```
