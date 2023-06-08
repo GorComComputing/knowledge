@@ -13,6 +13,8 @@ $ make ARCH=arm multi_v7_defconfig
 # Запуск меню конфигуратора
 $ make ARCH=arm menuconfig 
 
+$ make -j 4 ARCH=arm
+
 # Узнать версию собранного ядра
 $ make kernelversion 
 $ make kernelrelease
