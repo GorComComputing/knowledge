@@ -5,6 +5,7 @@
 #### Embedded Linux
 - [Crosstool-NG](https://github.com/GorComComputing/knowledge/blob/main/crosstool_ng.md)
 - [U-Boot](https://github.com/GorComComputing/knowledge/blob/main/u_boot.md)
+- [Linux kernel](https://github.com/GorComComputing/knowledge/blob/main/linux_kernel.md)
 - [Buildroot](https://github.com/GorComComputing/knowledge/blob/main/buildroot.md)
 - [QEMU](https://github.com/GorComComputing/knowledge/blob/main/qemu.md)
 #### Web-backend
