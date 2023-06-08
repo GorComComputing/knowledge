@@ -32,4 +32,6 @@ $ make kernelrelease
 $ make clean
 # Полная очистка
 $ make distclean
+
+
 ```
