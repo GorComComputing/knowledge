@@ -9,8 +9,9 @@ $ tar xf crosstool-ng-1.20.0.tar.bz2
 $ cd crosstool-ng-1.20.0
 $ ./configure --enable-local
 $ sudo apt install libtool-bin libtool-doc      # при ошибке: configure: error: Required tool not found: libtool
+$ sudo apt install help2man                     # при ошибке
 $ make
-$ make install
+$ sudo make install
 
 # Показать список всех компиляторов
 $ ./ct-ng list-samples
