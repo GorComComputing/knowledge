@@ -27,4 +27,9 @@ $ make -j 4 ARCH=arm CROSS_COMPILE=arm-cortex_a8-linux-gnueabihf- INSTALL_MOD_PA
 # Узнать версию собранного ядра
 $ make kernelversion 
 $ make kernelrelease
+
+# Удаление промежуточных файлов сборки
+$ make clean
+# Полная очистка
+$ make distclean
 ```
