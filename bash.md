@@ -39,7 +39,7 @@ $ sudo journalctl --vacuum-time=3d
 
 # Таким образом файлы /var будут лежать в разделе /home, а из корня на /home/var будет вести симлинк. Выберите вместо /var то, что у вас больше весит, но лучше не /bin и не /usr
 $ mkdir /home/var
-$ cp -R /var/* /home/var
+$ sudo cp -R /var/* /home/var
 $ rm -R /var
 $ ln -s /home/var /var
 ```
