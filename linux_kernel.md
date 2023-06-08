@@ -16,6 +16,14 @@ $ make ARCH=arm menuconfig
 # Компиляция ядра Linux
 $ make -j 4 ARCH=arm CROSS_COMPILE=arm-cortex_a8-linux-gnueabihf- zImage
 
+# Компиляция деревьев устройств
+$ make ARCH=arm dtbs
+
+# Компиляция модулей (разбросаны по всему дереву исходного кода)
+$ make -j 4 ARCH=arm CROSS_COMPILE=arm-cortex_a8-linux-gnueabihf- modules
+# Компилирует модули в каталог /lib/modules/[версия ядра]
+$ make -j 4 ARCH=arm CROSS_COMPILE=arm-cortex_a8-linux-gnueabihf- INSTALL_MOD_PATH=$HOME/rootfs modules_install
+
 # Узнать версию собранного ядра
 $ make kernelversion 
 $ make kernelrelease
