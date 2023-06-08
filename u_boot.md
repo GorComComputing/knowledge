@@ -11,4 +11,7 @@ $ git checkout v2015.07
 $ make CROSS_COMPILE=arm-cortex_a8-linux-gnueabihf- am335x_boneblack_vboot_defconfig
 $ make CROSS_COMPILE=arm-cortex_a8-linux-gnueabihf-
 $ sudo apt-get install --reinstall libssl-dev     # при ошибке: fatal error: openssl/evp.h: No such file or directory
+
+# Запуск U-Boot в QEMU
+$ qemu-system-arm  -machine virt -nographic -bios u-boot.bin
 ```
