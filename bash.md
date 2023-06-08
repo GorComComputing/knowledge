@@ -18,6 +18,7 @@ $ sudo passwd username        # задать пароль пользовател
 
 
 $ ip a      # узнать ip-адрес
+$ uname -a  # узнать версию ядра Linux
 
 $ lscpu             # информация о процессоре
 $ cat /proc/cpuinfo # информация о процессоре
