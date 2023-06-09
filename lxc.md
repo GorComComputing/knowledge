@@ -13,13 +13,13 @@ $ sudo lxc-create -t download -n myapp -- -d ubuntu -r focal -a amd64
 $ sudo lxc-ls -f
 
 # 3. запустить контейнер
-$ sudo lxc-start myapp
+$ sudo lxc-start -n myapp
 
 # 4. остановить
-$ sudo lxc-stop myapp
+$ sudo lxc-stop -n myapp
 
 # 5. зайти в shell контейнера
-$ sudo lxc-attach myapp
+$ sudo lxc-attach -n myapp
 
 # 6. посмотреть файловую систему контейнера
 $ ls -al /var/lib/lxc/myapp/rootfs
@@ -28,7 +28,14 @@ $ ls -al /var/lib/lxc/myapp/rootfs
 $ sudo cp buildroot-2023.02.1.tar.gz /var/lib/lxc/work/rootfs/home/goryachev/embd/buildroot-2023.02.1.tar.gz
 
 # Удалить контейнер
-$ lxc delete myapp
+$ sudo lxc-destroy -n myapp
+
+
+$ lxc-info -n base      # информация о контейнере
+$ lxc-freeze -n base    # заморозка всех процессов заданного контейнера
+$ lxc-unfreeze -n base  # разморозка всех процессов заданного контейнера
+$ lxc-copy -n base -N base2       # копирование контейнеров -n источник -N клонированный контейнер. С начала необходимо остановить контейнер
+$ lxc-snapshot -n base  # создать снимок контейнера. С начала необходимо остановить контейнер
 
 
 # Сменить пользователя в контейнере
