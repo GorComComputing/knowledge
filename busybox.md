@@ -21,4 +21,13 @@ $ make defconfig
 $ make menuconfig
 $ make -j 2 ARCH=arm CROSS_COMPILE=armv7-rpi2-linux-gnueabihf-
 $ make install
+
+# Создание архива
+$ cd ~/rootfs
+$ find . | cpio -H newc -ov --owner root:root > ../initramfs.cpio
+$ cd ..
+$ gzip initramfs.cpio
+$ mkimage -A arm -O linux -T ramdisk -d initramfs.cpio.gz uRamdisk
+# При ошибке: Команда «mkimage» не найдена
+$ sudo apt install u-boot-tools
 ```
