@@ -13,5 +13,7 @@
 #### Web-backend
 - [Go](https://github.com/GorComComputing/knowledge/blob/main/go.md)
 - [PostgreSQL](https://github.com/GorComComputing/knowledge/blob/main/postgresql.md)
+#### Web-frontend
+- [Chrome](https://github.com/GorComComputing/knowledge/blob/main/chrome.md)
 
 
