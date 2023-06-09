@@ -15,6 +15,9 @@ $ make ARCH=arm menuconfig
 
 # Компиляция ядра Linux
 $ make -j 4 ARCH=arm CROSS_COMPILE=arm-cortex_a8-linux-gnueabihf- zImage
+# при ошибке: fatal error: openssl/bio.h
+$ sudo apt-get install aptitude
+$ sudo aptitude install libssl-dev
 
 # Компиляция деревьев устройств
 $ make ARCH=arm dtbs
