@@ -36,3 +36,5 @@ $ make distclean
 # Запуск Linux kernel в QEMU
 $ QEMU_AUDIO_DRV=none qemu-system-arm  -m 256M -nographic -M vexpress-a9 -kernel zImage -dtb vexpress-v2p-ca9.dtb -append "console=ttyAMA0"
 ```
+
+<!-- https://xakep.ru/2021/06/10/linux-kernel-exploitation/ -->
