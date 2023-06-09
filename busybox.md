@@ -6,4 +6,8 @@
 $ git clone git://busybox.net/busybox.git
 $ cd busybox
 $ git checkout 1_35_0
+
+# Сборка BusyBox
+$ make distclean
+$ make defconfig
 ```
