@@ -30,4 +30,9 @@ $ gzip initramfs.cpio
 $ mkimage -A arm -O linux -T ramdisk -d initramfs.cpio.gz uRamdisk
 # При ошибке: Команда «mkimage» не найдена
 $ sudo apt install u-boot-tools
+
+# Запуск Linux kernel с BusyBox в QEMU
+$ QEMU_AUDIO_DRV=none qemu-system-arm  -m 256M -nographic -M vexpress-a9 -kernel zImage -dtb vexpress-v2p-ca9.dtb -append "console=ttyAMA0 rdinit=/bin/sh" -initrd initramfs.cpio.gz
+
+
 ```
