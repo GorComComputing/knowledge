@@ -24,6 +24,7 @@ $ make install
 
 # Создание архива
 $ cd ~/rootfs
+$ sudo chown -R root:root *
 $ find . | cpio -H newc -ov --owner root:root > ../initramfs.cpio
 $ cd ..
 $ gzip initramfs.cpio
