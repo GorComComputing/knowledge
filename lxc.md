@@ -4,7 +4,7 @@
 ```bash
 
 # Установка LXC под Ubuntu
-$ sudo apt install lxc
+$ sudo apt install lxc libvirt-daemon-system libvirt-clients
 
 # 1. создать контейнер с именем myapp
 $ sudo lxc-create -t download -n myapp -- -d ubuntu -r focal -a amd64
