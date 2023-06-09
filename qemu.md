@@ -6,6 +6,7 @@
 $ sudo apt update && upgrade
 
 $ sudo apt install libvirt-daemon
+$ sudo apt install qemu-kvm libvirt-daemon-system
 $ sudo systemctl enable libvirtd
 $ sudo systemctl start libvirtd
 
