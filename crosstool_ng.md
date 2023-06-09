@@ -58,3 +58,5 @@ C-library --->
 $ vi ./config
 ```
 
+<!-- https://temofeev.ru/info/articles/kross-kompilyator-dlya-raspberry-pi4/ -->
+
