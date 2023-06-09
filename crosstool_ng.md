@@ -5,8 +5,8 @@
 # Установка
 $ sudo apt-get install automake bison chrpath flex g++ git gperf gawk libexpat1-dev libncurses5-dev libsdl1.2-dev libtool python2.7-dev texinfo
 # Скачать текущую версию с сайта http://crosstool-ng.org/download/crosstool-ng
-$ tar xf crosstool-ng-1.20.0.tar.bz2
-$ cd crosstool-ng-1.20.0
+$ tar xf crosstool-ng-1.25.0.tar.bz2
+$ cd crosstool-ng-1.25.0
 $ ./configure --enable-local
 $ sudo apt install libtool-bin libtool-doc      # при ошибке: configure: error: Required tool not found: libtool
 $ sudo apt install help2man                     # при ошибке
