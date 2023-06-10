@@ -19,7 +19,7 @@ $ git checkout 1_35_0
 $ PATH=~/x-tools/armv7-rpi2-linux-gnueabihf/bin:$PATH
 $ make distclean
 $ make defconfig
-$ make menuconfig
+$ make menuconfig ARCH=arm CROSS_COMPILE=armv7-rpi2-linux-gnueabihf-
 $ make -j 2 ARCH=arm CROSS_COMPILE=armv7-rpi2-linux-gnueabihf-
 $ make install
 
