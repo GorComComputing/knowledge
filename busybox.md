@@ -40,3 +40,7 @@ $ QEMU_AUDIO_DRV=none qemu-system-arm  -m 256M -nographic -M vexpress-a9 -kernel
 # Параметры конфигурации BusyBox
 Settings -> Build static binary (no shared libs) [Y]
 ```
+```
+# Команды
+busybox --list      # показать список команд, которые может выполнять BusyBox
+```
