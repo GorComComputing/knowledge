@@ -34,6 +34,8 @@ $ sudo apt install u-boot-tools
 
 # Запуск Linux kernel с BusyBox в QEMU
 $ QEMU_AUDIO_DRV=none qemu-system-arm  -m 256M -nographic -M vexpress-a9 -kernel zImage -dtb vexpress-v2p-ca9.dtb -append "console=ttyAMA0 rdinit=/bin/sh" -initrd initramfs.cpio.gz
-
-
+```
+```
+# Параметры конфигурации BusyBox
+Settings -> Build static binary (no shared libs) [Y]
 ```
