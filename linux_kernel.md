@@ -8,6 +8,7 @@ $ cd linux
 $ git checkout v5.19.0
 
 # Выбор типовой конфигурации
+$ PATH=~/x-tools/arm-cortex_a8-linux-gnueabihf/bin:$PATH
 $ make ARCH=arm multi_v7_defconfig
 
 # Запуск меню конфигуратора
