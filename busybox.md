@@ -27,6 +27,8 @@ $ make install
 $ cd ~/rootfs
 $ sudo chown -R root:root *
 $ find . | cpio -H newc -ov --owner root:root > ../initramfs.cpio
+$ chmod -R 777 .
+$ find . | cpio -o -H newc > ../initrd.img
 $ cd ..
 $ gzip initramfs.cpio
 $ mkimage -A arm -O linux -T ramdisk -d initramfs.cpio.gz uRamdisk
