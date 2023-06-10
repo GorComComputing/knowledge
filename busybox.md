@@ -16,6 +16,7 @@ $ cd busybox
 $ git checkout 1_35_0
 
 # Сборка BusyBox
+$ PATH=~/x-tools/armv7-rpi2-linux-gnueabihf/bin:$PATH
 $ make distclean
 $ make defconfig
 $ make menuconfig
