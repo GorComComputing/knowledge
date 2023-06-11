@@ -73,8 +73,7 @@ $ chown postgres  /overlay/Embd_linux/data/pgsql/data
 $ sed -i "s|/var/run/postgres:/bin/false|/var/run/postgres:/bin/sh|" /etc/passwd
 $ mkdir -p /var/run/postgres
 $ ./busybox su - postgres
-$ LC_COLLATE="C" initdb --pwprompt -D /overlay/Embd_linux/data
-/pgsql/data/
+$ LC_COLLATE="C" initdb --pwprompt -D /overlay/Embd_linux/data/pgsql/data/
 $ exit
 
 # Запуск базы
