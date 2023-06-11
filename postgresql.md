@@ -58,3 +58,29 @@ $ pg_restore -U username -d dbname -1 filename.dump
 # Изменение пароля пользователя
 postgres=# ALTER ROLE saeed_raza WITH PASSWORD ‘data’;
 ```
+Установка PostgreSQL на OpenWrt
+```bash
+# Установка
+$ opkg update
+$ opkg install pgsql-server pgsql-cli
+$ uci set postgresql.config.PGDATA=/overlay/Embd_linux/data/pgsql/data
+$ uci set postgresql.config.PGLOG=/overlay/Embd_linux/data/pgsql/data/pgsql.log
+$ uci commit postgresql
+
+# Инициализация базы
+$ mkdir -p /overlay/Embd_linux/data/pgsql/data
+$ chown postgres  /overlay/Embd_linux/data/pgsql/data
+$ sed -i "s|/var/run/postgres:/bin/false|/var/run/postgres:/bin/sh|" /etc/passwd
+$ mkdir -p /var/run/postgres
+$ ./busybox su - postgres
+$ LC_COLLATE="C" initdb --pwprompt -D /overlay/Embd_linux/data
+/pgsql/data/
+$ exit
+
+# Запуск базы
+$ /etc/init.d/postgresql start
+# psql -d template1 -U postgres
+template1=# \q
+
+# 
+```
