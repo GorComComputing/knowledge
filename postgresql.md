@@ -81,6 +81,4 @@ $ exit
 $ /etc/init.d/postgresql start
 # psql -d template1 -U postgres
 template1=# \q
-
-# 
 ```
