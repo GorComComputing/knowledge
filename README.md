@@ -10,6 +10,7 @@
 - [BusyBox](https://github.com/GorComComputing/knowledge/blob/main/busybox.md)
 - [Buildroot](https://github.com/GorComComputing/knowledge/blob/main/buildroot.md)
 - [QEMU](https://github.com/GorComComputing/knowledge/blob/main/qemu.md)
+- [OpenWrt](https://github.com/GorComComputing/knowledge/blob/main/openwrt.md)
 #### Web-backend
 - [Go](https://github.com/GorComComputing/knowledge/blob/main/go.md)
 - [PostgreSQL](https://github.com/GorComComputing/knowledge/blob/main/postgresql.md)
