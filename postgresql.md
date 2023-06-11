@@ -76,8 +76,11 @@ $ ./busybox su - postgres
 $ LC_COLLATE="C" initdb --pwprompt -D /overlay/Embd_linux/data/pgsql/data/
 $ exit
 
-# Запуск базы
+# Запуск Postgres
 $ /etc/init.d/postgresql start
-# psql -d template1 -U postgres
+
+# Создание базы данных
+$ createdb db_name
+$ psql -d template1 -U postgres
 template1=# \q
 ```
