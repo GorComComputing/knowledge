@@ -54,3 +54,14 @@ $ ln -s /home/var /var
 ```
 Ctrl+H
 ```
+SSH
+```
+# Подключение
+$ ssh  root@192.168.0.254
+
+# При ошибке: Unable to negotiate with 192.168.0.254 port 22: no matching key exchange method found. Their offer: diffie-hellman-group1-sha1,diffie-hellman-group14-sha1
+# Добавить в файл ~/.ssh/config строки:
+Host 192.168.0.254
+    HostkeyAlgorithms ssh-dss,ssh-rsa
+    KexAlgorithms +diffie-hellman-group1-sha1
+```
