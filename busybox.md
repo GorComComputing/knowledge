@@ -49,4 +49,5 @@ busybox --list      # показать список команд, которые
 
 <!-- https://gist.github.com/franzflasch/132139b8ba798066394e62b3f7532f7a -->
 <!-- https://www.kernelconfig.io/config_net_9p_virtio -->
+<!-- https://www.youtube.com/watch?v=asnXWOUKhTA -->
 
