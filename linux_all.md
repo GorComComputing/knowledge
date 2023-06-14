@@ -19,7 +19,7 @@ $ make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- -j4
 
 # Собираем BusyBox
 $ cd busybox-1.36.0
-$ make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- defconfing
+$ make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- defconfig
 
 # Busybox Settings ==> Build Options SELECT Build BusyBox as a static binary(no shared libs)
 $ make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- menuconfig
