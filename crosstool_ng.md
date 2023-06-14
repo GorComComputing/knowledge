@@ -4,7 +4,7 @@
 ```bash
 # Установка
 $ sudo apt-get install automake bison chrpath flex g++ git gperf gawk libexpat1-dev libncurses5-dev libsdl1.2-dev libtool python2.7-dev texinfo
-$ sudo apt-get install build-essential expat help2man python-dev
+$ sudo apt-get install build-essential expat help2man 
 # Скачать текущую версию с сайта http://crosstool-ng.org/download/crosstool-ng
 $ wget crosstool-ng.org/download/crosstool-ng/crosstool-ng-1.25.0.tar.bz2
 $ tar xf crosstool-ng-1.25.0.tar.bz2
