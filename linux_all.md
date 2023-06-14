@@ -45,3 +45,5 @@ $ qemu-system-arm -m 256 -M virt -kernel <linux_dir>/arch/arm/boot/zImage -initr
 # В гостевой системе подключаем каталог из хост-системы
 $ mkdir -p /mnt/host_share && mount -t 9p -o trans=virtio host_share /mnt/host_share -oversion=9p2000.L
 ```
+
+<!-- https://habr.com/ru/companies/ruvds/articles/524532/ -->
