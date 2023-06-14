@@ -12,7 +12,18 @@ $ wget https://busybox.net/downloads/busybox-1.36.0.tar.bz2 && tar xvf busybox-1
 $ cd linux-5.15.6
 $ make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- defconfig
 
-# add all 9p virtio related configs
+# add all 9p virtio related configs:
+#    CONFIG_NET_9P=y
+#    CONFIG_NET_9P_VIRTIO=y
+#    CONFIG_NET_9P_DEBUG=y (Optional)
+#    CONFIG_9P_FS=y
+#    CONFIG_9P_FS_POSIX_ACL=y
+#    CONFIG_PCI=y
+#    CONFIG_VIRTIO_PCI=y
+# and these PCI and virtio options:
+#    CONFIG_PCI=y
+#    CONFIG_VIRTIO_PCI=y
+#    CONFIG_PCI_HOST_GENERIC=y (only needed for the QEMU Arm 'virt' board)
 $ make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- menuconfig
 
 $ make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- -j4
