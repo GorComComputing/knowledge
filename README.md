@@ -11,6 +11,7 @@
 - [Buildroot](https://github.com/GorComComputing/knowledge/blob/main/buildroot.md)
 - [QEMU](https://github.com/GorComComputing/knowledge/blob/main/qemu.md)
 - [OpenWrt](https://github.com/GorComComputing/knowledge/blob/main/openwrt.md)
+- [Linux All](https://github.com/GorComComputing/knowledge/blob/main/linux_all.md)
 #### Web-backend
 - [Go](https://github.com/GorComComputing/knowledge/blob/main/go.md)
 - [PostgreSQL](https://github.com/GorComComputing/knowledge/blob/main/postgresql.md)
