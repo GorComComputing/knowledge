@@ -46,3 +46,7 @@ Settings -> Build static binary (no shared libs) [Y]
 # Команды
 busybox --list      # показать список команд, которые может выполнять BusyBox
 ```
+
+<!-- https://gist.github.com/franzflasch/132139b8ba798066394e62b3f7532f7a -->
+<!-- https://www.kernelconfig.io/config_net_9p_virtio -->
+
