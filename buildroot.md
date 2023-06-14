@@ -46,7 +46,7 @@ $ sudo make list-defconfigs
 Установить приглашение ввода [user@hostname]:currentpath$:  
 в файле /etc/profile 
 ```
-PS1='[\u@\h]:\w$:'
+PS1='\u@\h:\w$'
 export PS1
 
 # if [ "$PS1" ]; then
