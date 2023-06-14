@@ -15,7 +15,7 @@ $ sudo apt install qemu-kvm qemu
 $ sudo apt install virt-manager
 
 # Чтобы запускать ARM, MIPS... -программы прямо под Linux
-$ sudo apt-get install qemu-user-static
+$ sudo apt-get install qemu qemu-user-static binfmt-support
 ```
 
 `Ctrl+A затем X (два отдельных нажатия) - Выход из QEMU в терминале`
