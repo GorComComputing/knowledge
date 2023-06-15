@@ -13,7 +13,7 @@ $ sudo make clean
 # Выбор типовой конфигурации ARM для QEMU
 $ sudo make qemu_arm_versatile_defconfig
  
-# Меню конфигурайии Buildroot
+# Меню конфигурации Buildroot
 $ sudo make menuconfig
  
 # Запуск сборки
