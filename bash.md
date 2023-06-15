@@ -23,6 +23,8 @@ $ sudo service lightdm restart      # перезапуск x-server
 
 $ dd if=uboot-allwinner/spl/sun4i-spl.bin of=/dev/sdb bs=1024 seek=8 conv=notrunc        # Копируем SPL (boot0)  первичный загрузчик на SD
 $ sudo dd if=/dev/zero of=file.img bs=1M count=512                                       # Создает файл заполненный нулями размером 512 Мб (можно случайными числами /dev/random)
+$ sync                                      # Запускает синхронизацию, чтобы убедиться, что буферы записи очищены
+
 $ sudo mount -v ~/disk.img /mnt/            # Монтирование файловой системы
 $ sudo umount /mnt                          # Размонтирование файловой системы
 $ sudo fdisk -l /dev/sdb                    # Вывести все разделы на диске
