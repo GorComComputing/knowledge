@@ -58,3 +58,5 @@ $ mkdir -p /mnt/host_share && mount -t 9p -o trans=virtio host_share /mnt/host_s
 ```
 
 <!-- https://habr.com/ru/companies/ruvds/articles/524532/ -->
+<!-- https://habr.com/ru/articles/149598/ -->
+<!-- https://habr.com/ru/articles/146877/ -->
