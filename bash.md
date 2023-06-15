@@ -29,6 +29,8 @@ $ sudo fdisk -l /dev/sdb                    # Вывести все раздел
 $ sudo fdisk /dev/sdb                       # Разметка диска в интерактивном режиме
 $ mkfs.vfat /dev/sdb1 -n sun4i-boot         # Форматирование раздела в FAT16
 $ mkfs.ext4 /dev/sdb2 -L sun4i-rootfs       # Форматирование раздела в ext4
+$ sudo file -sL /dev/sdb1                   # Узнать тип файловой системы
+
 
 
 $ ip a      # узнать ip-адрес
