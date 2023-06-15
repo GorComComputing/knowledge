@@ -20,6 +20,8 @@ $ sudo useradd -m username    # создать пользователя вмес
 $ sudo passwd username        # задать пароль пользователя
 $ sudo service lightdm restart      # перезапуск x-server
 
+$ diff myfile1 myfile2 > changes.diff        # сравнивает два файла и разницу записывает в третий
+
 
 $ dd if=uboot-allwinner/spl/sun4i-spl.bin of=/dev/sdb bs=1024 seek=8 conv=notrunc        # Копируем SPL (boot0)  первичный загрузчик на SD
 $ sudo dd if=/dev/zero of=file.img bs=1M count=512                                       # Создает файл заполненный нулями размером 512 Мб (можно случайными числами /dev/random)
