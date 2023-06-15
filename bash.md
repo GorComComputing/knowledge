@@ -26,6 +26,7 @@ $ sudo dd if=/dev/zero of=file.img bs=1M count=512                              
 $ sudo mount -v ~/disk.img /mnt/            # Монтирование файловой системы
 $ sudo umount /mnt                          # Размонтирование файловой системы
 $ sudo fdisk -l /dev/sdb                    # Вывести все разделы на диске
+$ sudo fdisk /dev/sdb                       # Разметка диска в интерактивном режиме
 
 
 $ ip a      # узнать ip-адрес
