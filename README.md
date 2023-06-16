@@ -18,4 +18,6 @@
 #### Web-frontend
 - [Chrome](https://github.com/GorComComputing/knowledge/blob/main/chrome.md)
 
+- [Ссылки](https://github.com/GorComComputing/knowledge/blob/main/links.md)
+
 
