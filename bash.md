@@ -19,6 +19,7 @@ $ ps        # показать список процессов
 $ sudo useradd -m username    # создать пользователя вместе с домашним каталогом
 $ sudo passwd username        # задать пароль пользователя
 $ sudo service lightdm restart      # перезапуск x-server
+$ sudo dpkg -i NOMBRE-DEL-PAQUETE.deb   # установка из пакета deb скачанного с сайта
 
 $ diff myfile1 myfile2 > changes.diff        # сравнивает два файла и разницу записывает в третий
 
