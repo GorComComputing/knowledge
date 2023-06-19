@@ -57,6 +57,10 @@ $ eject             # открыть CD-ROM
 
 $ ping -c 3 google.com       # проверка подключения к интернету
 $ curl -I https://google.com # проверка подключения к интернету
+
+# для подключения к usb-serial
+$ sudo chmod 666 /dev/ttyUSB0
+$ putty
 ```
 Чтобы освободить место в коневой файловой системе
 ```
