@@ -62,6 +62,9 @@ $ curl -I https://google.com # проверка подключения к инт
 # для подключения к usb-serial
 $ sudo chmod 666 /dev/ttyUSB0
 $ putty
+# добавить один раз пользователя в группу, чтобы всегда были права на com-порт
+$ sudo usermod -a -G dialout $USER
+$ sudo reboot       # перезагрузка сеанса
 
 $ stty -a -F /dev/ttyUSB0    # вывод параметров com-порта
 $ stty < /dev/ttyS0          # узнать скорость com-порта
