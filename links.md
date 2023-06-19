@@ -3,4 +3,5 @@
 - [Allwinner A10](https://habr.com/ru/articles/149598/)
 - [GRUB](https://blackyblack.livejournal.com/35971.html)
 - [Запуск ядра Linux из GRUB](https://habr.com/ru/articles/102230/)
+- [Запуск ядра Linux из GRUB еще](https://www.alexgur.ru/articles/2275/)
 
