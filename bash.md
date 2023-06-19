@@ -61,6 +61,7 @@ $ curl -I https://google.com # проверка подключения к инт
 # для подключения к usb-serial
 $ sudo chmod 666 /dev/ttyUSB0
 $ putty
+$ stty < /dev/ttyS0          # узнать скорость com-порта
 ```
 Чтобы освободить место в коневой файловой системе
 ```
