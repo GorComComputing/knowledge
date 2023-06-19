@@ -79,6 +79,8 @@ $ stty -g -F /dev/ttyUSB0 > save.txt
 $ stty --save /dev/ttyUSB0 > save.txt
 # Считываем сохраненные параметры:
 $ stty -F /dev/ttyUSB0 `cat save.txt`
+
+$ dmesg -w                # отображает события ядра
 ```
 Чтобы освободить место в коневой файловой системе
 ```
