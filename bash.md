@@ -61,6 +61,8 @@ $ curl -I https://google.com # проверка подключения к инт
 # для подключения к usb-serial
 $ sudo chmod 666 /dev/ttyUSB0
 $ putty
+
+$ stty -a -F /dev/ttyUSB0    # вывод параметров com-порта
 $ stty < /dev/ttyS0          # узнать скорость com-порта
 $ stty -F /dev/ttyS0 38400   # установить скорость com-порта
 ```
