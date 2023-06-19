@@ -62,6 +62,7 @@ $ curl -I https://google.com # проверка подключения к инт
 $ sudo chmod 666 /dev/ttyUSB0
 $ putty
 $ stty < /dev/ttyS0          # узнать скорость com-порта
+$ stty -F /dev/ttyS0 38400   # установить скорость com-порта
 ```
 Чтобы освободить место в коневой файловой системе
 ```
