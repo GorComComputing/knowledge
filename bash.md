@@ -65,6 +65,19 @@ $ putty
 $ stty -a -F /dev/ttyUSB0    # вывод параметров com-порта
 $ stty < /dev/ttyS0          # узнать скорость com-порта
 $ stty -F /dev/ttyS0 38400   # установить скорость com-порта
+
+# послать в com-порт
+$ echo "HELLO" > /dev/ttyUSB0
+$ echo  -ne '\x23\x02\x01\x00\x50\x01\r' > /dev/ttyUSB0
+# прочитать com-порт
+$ cat /dev/ttyUSB0
+# Устанавливаем скорость 115200 бод, 8 битов данных, стоп бит, без проверки четности (режим 8N1):
+$ stty -F /dev/ttyUSB0 115200 cs8 -cstopb -parenb
+# Сохранить параметры порта для последующего восстановления:
+$ stty -g -F /dev/ttyUSB0 > save.txt
+$ stty --save /dev/ttyUSB0 > save.txt
+# Считываем сохраненные параметры:
+$ stty -F /dev/ttyUSB0 `cat save.txt`
 ```
 Чтобы освободить место в коневой файловой системе
 ```
