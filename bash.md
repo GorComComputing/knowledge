@@ -91,3 +91,9 @@ Host 192.168.0.254
     HostkeyAlgorithms ssh-dss,ssh-rsa
     KexAlgorithms +diffie-hellman-group1-sha1
 ```
+Создание iso-образа с диска:
+```
+dd if=/dev/cdrom of=win7.iso bs=2048
+sudo mount -o loop win7.iso /media/ 
+```
+
