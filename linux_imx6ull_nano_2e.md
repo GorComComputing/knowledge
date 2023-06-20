@@ -37,33 +37,13 @@ $ sudo cp -r freescale/common/imx/genimage.cfg.template_imx6 /var/lib/lxc/work/r
 $ make -j4	    # количество ядер в процессоре для ускорения сборки
 
 # После сборки бинарные файлы лежат здесь
-$ ls output/images
+$ ls output/images/
 
 # Для обновления корневой файловой системы или ядра Linux на модуле SK-iMX6ULL-NANO-2E, необходимо скопировать файлы output/images/rootfs.tar и output/images/u-boot.imx в mfgtools\Profiles\Linux\OS Firmware\files\ 
 # Замкните между собой контакты посадочного места J1 на самом модуле (это необходимо только на этапе сброса или включения питания), подключите USB кабель к разъему X7.
 # Windows должна обнаружить новое HID устройство (установка дополнительных драйверов не требуется).
 # Запустите MfgTool2.exe
 # Нажмите кнопку «Start», в консоли будет отображаться рабочий процесс, после завершения отключите-включите питание или нажмите кнопку “RESET” (J1 должен быть разомкнут).
-
-
-# Запуск Linux после сборки в QEMU
-$ cd output/images
-$ sudo ./start-qemu.sh
-
-# Меню конфигурайии Linux kernel
-$ sudo make linux-menuconfig
-
-# Меню конфигурайии BusyBox
-$ sudo make busybox-menuconfig
-
-# Сборка BusyBox
-$ sudo make busybox
-
-# Показать список целей
-$ sudo make show-targets
-
-# Показать список возможных конфигураций
-$ sudo make list-defconfigs
 ```
 
 Установить приглашение ввода [user@hostname]:currentpath$:  
@@ -100,5 +80,9 @@ $ make linux-rebuild 		# принудительная сборка ядра Linu
 $ make busybox-menuconfig 	# запуск конфигуратора Busybox
 $ make busybox-rebuild 		# принудительная сборка Busybox
 $ make uboot-rebuild 		# принудительная сборка загрузчика U-boot
+
+$ make busybox			# Сборка BusyBox
+$ sudo make show-targets	# Показать список целей
+$ sudo make list-defconfigs	# Показать список возможных конфигураций
 ```
 
