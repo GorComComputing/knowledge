@@ -2,6 +2,19 @@
 
 
 ```
+# Установка компилятора и библиотек для i386
+$ sudo apt install gcc-multilib g++-multilib
+# Компиляция с параметром -static
+$ gcc -m32 -ggdb3 -O0 -pedantic-errors -std=c89   -Wall -Wextra -pedantic -static  -o init_i386 init.c
+
+# Собираем ядро Linux
+$ cd linux/
+$ make ARCH=i386 i386_defconfig
+$ make ARCH=i386 -j2
+
+# Запускаем ядро Linux и корневую файловую систему в Qemu
+$ qemu-system-i386 -kernel linux/arch/x86/boot/bzImage -initrd busybox/~/initramfs.cpio.gz --append "root=/dev/ram init=/init_i386"
+
 # 1. Создаём виртуальный диск размером 64Мб (если надо больше, делаем больше):
 $ dd if=/dev/zero of=out.img seek=64MB count=1K bs=1
 
@@ -28,8 +41,8 @@ $ sudo mount -t ext2 /dev/loop1 /mnt
 $ sudo mkdir -p /mnt/boot/grub
 $ sudo grub-install --boot-directory=/mnt/boot/ --modules="ext2 part_msdos" /dev/loop0
 
-# 7. Добавляем grub.cfg и другие файлы по вкусу.
-$
+# 7. Добавляем grub.cfg и другие файлы по вкусу
+$ find -print0 | cpio -0oH newc | gzip -9 > ../initramfs.cpio.gz
 $ sudo cp busybox/~/initramfs.cpio.gz /mnt/boot/
 $ sudo cp linux/arch/x86/boot/bzImage /mnt/boot/
 
