@@ -28,7 +28,7 @@ $ sudo cp .config /var/lib/lxc/work/rootfs/home/gor/imx6ull-nano-2e/buildroot/.c
 $ sudo cp .config /var/lib/lxc/work/rootfs/home/gor/imx6ull-nano-2e/buildroot/.config
  
 # Запуск сборки
-$ sudo make -j4	    # количество ядер в процессоре для ускорения сборки
+$ make -j4	    # количество ядер в процессоре для ускорения сборки
 
 # После сборки бинарные файлы лежат здесь
 $ ls output/images
