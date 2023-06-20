@@ -2,6 +2,43 @@
 
 
 ```
+# 1. Создаём виртуальный диск размером 64Мб (если надо больше, делаем больше):
+$ dd if=/dev/zero of=out.img seek=64MB count=1K bs=1
+
+# 2. Размечаем под ext2 партицию:
+$ sudo parted out.img
+(parted) mklabel msdos
+(parted) mkpart primary ext2 32k 100%
+(parted) toggle 1 boot
+(parted) quit
+# Партиция имеет сдвиг в 32К от начала диска. Это, видимо, для размещения MBR + Stage 1.5 для груба.
+
+# 3. Монтируем диск и его партицию на два отдельных девайса:
+$ sudo losetup /dev/loop0 out.img
+$ sudo kpartx -v -a /dev/loop0
+$ sudo losetup /dev/loop1 /dev/mapper/loop0p1
+
+# 4. Форматируем партицию под ext2:
+$ sudo mke2fs /dev/loop1
+
+# 5. Монтируем партицию как диск:
+$ sudo mount -t ext2 /dev/loop1 /mnt
+
+# 6. Устанавливаем груб на свежесозданный диск. Обратите внимание, что последним параметром он принимает физический диск:
+$ sudo mkdir -p /mnt/boot/grub
+$ sudo grub-install --boot-directory=/mnt/boot/ --modules="ext2 part_msdos" /dev/loop0
+
+# 7. Добавляем grub.cfg и другие файлы по вкусу.
+
+# 8. Подметаем за собой:
+$ sudo umount /mnt
+$ sudo kpartx -d /dev/loop1
+$ sudo kpartx -d /dev/loop0
+
+# 9. Стартуем в Qemu:
+$ sudo qemu-system-x86_64 -hda /home/andrew/dev/boot/out.img -m 1024 --enable-kvm
+
+
 # Загрузка Qemu с флешки  (Ctrl+Alt+G пустить захват мыши)
 $ sudo qemu-system-i386 -hda /dev/sdb -boot c -usb
 
