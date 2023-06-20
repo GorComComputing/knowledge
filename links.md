@@ -6,5 +6,7 @@
 - [Запуск ядра Linux из GRUB еще](https://www.alexgur.ru/articles/2275/)
 - [Writing kernel](https://www.cs.vu.nl/~herbertb/misc/writingkernels.txt)
 - [Параметры ядра в GRUB](https://losst.pro/ustanavlivaem-parametry-yadra-v-grub)
+- [Параметры ядра в GRUB еще](https://ru.manpages.org/bootparam/7)
+
  
 
