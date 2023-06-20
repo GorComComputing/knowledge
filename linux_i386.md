@@ -29,6 +29,9 @@ $ sudo mkdir -p /mnt/boot/grub
 $ sudo grub-install --boot-directory=/mnt/boot/ --modules="ext2 part_msdos" /dev/loop0
 
 # 7. Добавляем grub.cfg и другие файлы по вкусу.
+$
+$ sudo cp busybox/~/initramfs.cpio.gz /mnt/boot/
+$ sudo cp linux/arch/x86/boot/bzImage /mnt/boot/
 
 # 8. Подметаем за собой:
 $ sudo umount /mnt
