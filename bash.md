@@ -67,9 +67,10 @@ $ putty
 $ sudo usermod -a -G dialout $USER
 $ sudo reboot       # перезагрузка сеанса
 
-$ stty -a -F /dev/ttyUSB0        # вывод параметров com-порта
-$ stty < /dev/ttyUSB0              # узнать скорость com-порта
-$ stty -F /dev/ttyUSB0 115200    # установить скорость com-порта
+$ ls -l /dev/ttyUSB0                 # узнать права на usb-serial
+$ stty -a -F /dev/ttyUSB0            # вывод параметров com-порта
+$ stty < /dev/ttyUSB0                # узнать скорость com-порта
+$ stty -F /dev/ttyUSB0 115200        # установить скорость com-порта
 
 # послать в com-порт
 $ echo "HELLO" > /dev/ttyUSB0
