@@ -55,7 +55,7 @@ $ sudo kpartx -d /dev/loop0
 $ sudo qemu-system-x86_64 -hda /home/andrew/dev/boot/out.img -m 1024
 
 # Запись файла образа на флешку
-$ dd if=out.img of=/dev/sdb bs=1024 conv=notrunc        
+$ sudo dd if=out.img of=/dev/sdb bs=1024 conv=notrunc        
 
 # Загрузка Qemu с флешки  (Ctrl+Alt+G пустить захват мыши)
 $ sudo qemu-system-i386 -hda /dev/sdb -boot c -usb
