@@ -26,6 +26,8 @@ $ make menuconfig
 $ sudo cp linux_imx_4.9.x_1.0.0_ga-sk.tar.bz2 /var/lib/lxc/work/rootfs/home/gor/imx6ull-nano-2e/buildroot/dl/linux/
 # перенести файл с U-Boot в каталог buildroot/dl/u-boot/
 $ sudo cp uboot_imx_4.9.x_1.0.0_ga-sk.tar.bz2 /var/lib/lxc/work/rootfs/home/gor/imx6ull-nano-2e/buildroot/dl/uboot/
+# перенести каталог starterkit в каталог buildroot/board/
+$ sudo cp starterkit /var/lib/lxc/work/rootfs/home/gor/imx6ull-nano-2e/buildroot/board/
  
 # Запуск сборки
 $ make -j4	    # количество ядер в процессоре для ускорения сборки
