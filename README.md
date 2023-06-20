@@ -13,6 +13,7 @@
 - [OpenWrt](https://github.com/GorComComputing/knowledge/blob/main/openwrt.md)
 - [Linux All](https://github.com/GorComComputing/knowledge/blob/main/linux_all.md)
 - [Linux i386](https://github.com/GorComComputing/knowledge/blob/main/linux_i386.md)
+- [Linux iMX6ULL-NANO-2E](https://github.com/GorComComputing/knowledge/blob/main/linux_imx6ull_nano_2e.md)
 #### Web-backend
 - [Go](https://github.com/GorComComputing/knowledge/blob/main/go.md)
 - [PostgreSQL](https://github.com/GorComComputing/knowledge/blob/main/postgresql.md)
