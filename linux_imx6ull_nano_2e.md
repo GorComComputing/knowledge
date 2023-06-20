@@ -29,6 +29,7 @@ $ sudo cp uboot_imx_4.9.x_1.0.0_ga-sk.tar.bz2 /var/lib/lxc/work/rootfs/home/gor/
 # перенести каталог starterkit в каталог buildroot/board/
 $ sudo cp -r starterkit /var/lib/lxc/work/rootfs/home/gor/imx6ull-nano-2e/buildroot/board/
 $ sudo chown gor board/starterkit
+$ mkdir output/images/src
  
 # Запуск сборки
 $ make -j4	    # количество ядер в процессоре для ускорения сборки
