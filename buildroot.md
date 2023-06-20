@@ -70,7 +70,7 @@ File systems -> FUSE (Filesystem in Userspace) support
 # Монтирование файловой системы хоста в QEMU (вводится в QEMU)
 $ sshfs -o allow_other,default_permissions <username>@10.0.2.2:<host path> /mnt
 ```
-Параметры процессора:
+Параметры процессора для SK-iMX6ULL-NANO-2E:
 ```
 Target options
 	-> Target Architecture 			= ARM (little endian)
