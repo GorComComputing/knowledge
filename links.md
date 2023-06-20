@@ -7,6 +7,8 @@
 - [Writing kernel](https://www.cs.vu.nl/~herbertb/misc/writingkernels.txt)
 - [Параметры ядра в GRUB](https://losst.pro/ustanavlivaem-parametry-yadra-v-grub)
 - [Параметры ядра в GRUB еще](https://ru.manpages.org/bootparam/7)
+- [Multiboot Specification](https://ru.wikipedia.org/wiki/Multiboot_Specification)
+
 
  
 
