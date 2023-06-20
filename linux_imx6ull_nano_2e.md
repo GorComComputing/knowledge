@@ -25,13 +25,20 @@ $ make menuconfig
 # перенести файл с ядром Linux в каталог buildroot/dl/linux/
 $ sudo cp linux_imx_4.9.x_1.0.0_ga-sk.tar.bz2 /var/lib/lxc/work/rootfs/home/gor/imx6ull-nano-2e/buildroot/dl/linux/
 # перенести файл с U-Boot в каталог buildroot/dl/u-boot/
-$ sudo cp uboot_imx_4.9.x_1.0.0_ga-sk.tar.bz2 /var/lib/lxc/work/rootfs/home/gor/imx6ull-nano-2e/buildroot/dl/u-boot/
+$ sudo cp uboot_imx_4.9.x_1.0.0_ga-sk.tar.bz2 /var/lib/lxc/work/rootfs/home/gor/imx6ull-nano-2e/buildroot/dl/uboot/
  
 # Запуск сборки
 $ make -j4	    # количество ядер в процессоре для ускорения сборки
 
 # После сборки бинарные файлы лежат здесь
 $ ls output/images
+
+# Для обновления корневой файловой системы или ядра Linux на модуле SK-iMX6ULL-NANO-2E, необходимо скопировать файлы output/images/rootfs.tar и output/images/u-boot.imx в mfgtools\Profiles\Linux\OS Firmware\files\ 
+# Замкните между собой контакты посадочного места J1 на самом модуле (это необходимо только на этапе сброса или включения питания), подключите USB кабель к разъему X7.
+# Windows должна обнаружить новое HID устройство (установка дополнительных драйверов не требуется).
+# Запустите MfgTool2.exe.
+# Нажмите кнопку «Start», в консоли будет отображаться рабочий процесс, после завершения отключите-включите питание или нажмите кнопку “RESET” (J1 должен быть разомкнут).
+
 
 # Запуск Linux после сборки в QEMU
 $ cd output/images
@@ -67,20 +74,7 @@ export PS1
 # 	fi
 # fi
 ```
-
-Для передачи файлов в QEMU:
-```
-# Параметры конфигурации Buildroot
-Target packages -> Filesystem and flash utilities -> sshfs (FUSE)
-
-# Параметры конфигурации Linux kernel
-# enable it to be built as an inbuilt module (* instead of M in menuconfig)
-File systems -> FUSE (Filesystem in Userspace) support 
-
-# Монтирование файловой системы хоста в QEMU (вводится в QEMU)
-$ sshfs -o allow_other,default_permissions <username>@10.0.2.2:<host path> /mnt
-```
-Параметры процессора:
+Параметры процессора для SK-iMX6ULL-NANO-2E:
 ```
 Target options
 	-> Target Architecture 			= ARM (little endian)
@@ -89,11 +83,8 @@ Target options
 	-> Target ABI 				= EABIhf
 	-> Floating point strategy 		= NEON/VFPv4
 	-> ARM instruction set 			= Thumb2
-
-
 ```
-
-Основные команды:
+Основные команды Buildroot:
 ```
 $ make 				# сборка системы
 $ make menuconfig 		# запуск меню настроек и состава требуемых пакетов
