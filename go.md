@@ -14,9 +14,9 @@ $ go version
 $ go run main.go
 
 # Запуск c созданием файла
-$ go build main.go
-$ GOOS=linux GOARCH=mips GOMIPS=softfloat go build main.go
-$ GOOS=linux GOARCH=arm go build main.go
+$ go build -o main main.go
+$ GOOS=linux GOARCH=mips GOMIPS=softfloat go build -o main main.go
+$ GOOS=linux GOARCH=arm go build -o main main.go
 
 # Подключение пакетов
 $ go get github.com/lib/pq
