@@ -119,11 +119,11 @@ config BR2_PACKAGE_HELLOARM
         help
           This is a comment that explains what helloARM is.
 
-          https://blablacode.ru/blablacode_auto_helloworld-0.01.tar.gz
+          https://helloARM
 
 
-$ touch auto_helloARM.mk
-$ vi auto_helloARM.mk
+$ touch helloARM.mk
+$ vi helloARM.mk
 # Добавляем в файл:
 
 ################################################################################
@@ -156,7 +156,6 @@ $(eval $(generic-package))
 
 menu "Target packages"
 
-        source "package/busybox/Config.in"
         source "package/helloARM/Config.in"
 
 $ mkdir package/helloARM/src
