@@ -135,7 +135,7 @@ $ vi auto_helloARM.mk
 HELLOARM_VERSION = 0.01
 HELLOARM_SOURCE = helloARM-$(HELLOARM_VERSION).tar.gz
 HELLOARM_SITE = package/helloARM/src
-HELLOARM_SITE_METHOD = local	# Other methods like git,wget,scp,file etc. are also available.
+HELLOARM_SITE_METHOD = local# Other methods like git,wget,scp,file etc. are also available.
 # HELLOARM_INSTALL_STAGING = YES
 # HELLOARM_INSTALL_TARGET = YES
 # HELLOARM_DEPENDENCIES = host-pkgconf
