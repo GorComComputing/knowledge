@@ -75,10 +75,13 @@ Target options
 $ make 				# сборка системы
 $ make menuconfig 		# запуск меню настроек и состава требуемых пакетов
 $ clean 			# очистка системы, ВНИМАНИЕ!!! Полностью удаляется содержимое папки output, что удалит все изменения в исходных кодах и настройки, перед чисткой нужно позаботится об этом.
+$ make clean			# пересобирает Toolchain
+
 $ make linux-menuconfig 	# запуск конфигуратора ядра Linux
 $ make linux-rebuild 		# принудительная сборка ядра Linux
 $ make busybox-menuconfig 	# запуск конфигуратора Busybox
 $ make busybox-rebuild 		# принудительная сборка Busybox
+$ make uboot-menuconfig		# запуск конфигуратора U-boot
 $ make uboot-rebuild 		# принудительная сборка загрузчика U-boot
 $ make uclibc-menuconfig	# запуск конфигуратора uClibc
 
