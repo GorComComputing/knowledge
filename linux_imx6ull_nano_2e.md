@@ -85,4 +85,14 @@ $ make busybox			# Сборка BusyBox
 $ sudo make show-targets	# Показать список целей
 $ sudo make list-defconfigs	# Показать список возможных конфигураций
 ```
+Настройки сети:
+```
+В файле /etc/network/interfaces закомметировать eth1:
+
+#auto eth1
+#iface eth1 inet static
+#	address 192.168.63.136
+#	netmask 255.255.255.0
+#	gateway 192.168.63.1
+```
 
