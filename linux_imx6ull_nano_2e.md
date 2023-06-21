@@ -80,6 +80,7 @@ $ make linux-rebuild 		# принудительная сборка ядра Linu
 $ make busybox-menuconfig 	# запуск конфигуратора Busybox
 $ make busybox-rebuild 		# принудительная сборка Busybox
 $ make uboot-rebuild 		# принудительная сборка загрузчика U-boot
+$ make uclibc-menuconfig	# запуск конфигуратора uClibc
 
 $ make busybox			# Сборка BusyBox
 $ sudo make show-targets	# Показать список целей
