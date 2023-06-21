@@ -5,7 +5,7 @@
 # Клонирование с репозитория
 $ git clone git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git linux
 $ cd linux
-$ git checkout v5.19.0
+$ git checkout v5.19.1
 
 # Выбор типовой конфигурации
 $ PATH=~/x-tools/arm-cortex_a8-linux-gnueabihf/bin:$PATH
