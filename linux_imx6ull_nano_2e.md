@@ -109,10 +109,13 @@ $ cd package/
 $ mkdir helloARM
 $ cd helloARM/
 $ touch Config.in
-$ vi Config.in			# Добавляем в файл:
+$ vi Config.in
+# Добавляем в файл:
+# Строка bool, helpстрочка и другая информация метаданных о параметре конфигурации должны быть с отступом в одну табуляцию. Сам текст справки должен иметь отступ в одну табуляцию и два пробела, строки должны быть перенесены так, чтобы вместить 72 столбца, где табуляция соответствует 8, поэтому в самом тексте 62 символа. В тексте справки после пустой строки должен быть указан восходящий URL-адрес проекта.
 
 config BR2_PACKAGE_HELLOARM
         bool "helloARM"
+	default y
         help
           This is a comment that explains what helloARM is.
 
@@ -120,7 +123,8 @@ config BR2_PACKAGE_HELLOARM
 
 
 $ touch auto_helloARM.mk
-$ vi auto_helloARM.mk		# Добавляем в файл:
+$ vi auto_helloARM.mk
+# Добавляем в файл:
 
 HELLOARM_VERSION = 0.01
 HELLOARM_SOURCE = auto_helloARM-$(HELLOARM_VERSION).tar.gz
