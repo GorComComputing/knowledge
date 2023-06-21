@@ -41,8 +41,9 @@ $ sudo file -sL /dev/sdb1                   # Узнать тип файлово
 
 
 
-$ ip a      # узнать ip-адрес
-$ uname -a  # узнать версию ядра Linux
+$ ip a           # узнать ip-адрес
+$ hostname -I    # узнать ip-адрес
+$ uname -a       # узнать версию ядра Linux
 
 $ lscpu             # информация о процессоре
 $ cat /proc/cpuinfo # информация о процессоре
