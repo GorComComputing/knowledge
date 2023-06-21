@@ -75,6 +75,7 @@ Target options
 $ make 				# сборка системы
 $ make menuconfig 		# запуск меню настроек и состава требуемых пакетов
 $ clean 			# очистка системы, ВНИМАНИЕ!!! Полностью удаляется содержимое папки output, что удалит все изменения в исходных кодах и настройки, перед чисткой нужно позаботится об этом.
+# Чтобы удалить все продукты сборки (включая каталоги сборки, хост, промежуточные и целевые деревья, образы и цепочку инструментов)
 $ make clean			# пересобирает Toolchain
 
 $ make linux-menuconfig 	# запуск конфигуратора ядра Linux
@@ -86,8 +87,11 @@ $ make uboot-rebuild 		# принудительная сборка загруз�
 $ make uclibc-menuconfig	# запуск конфигуратора uClibc
 
 $ make busybox			# Сборка BusyBox
-$ sudo make show-targets	# Показать список целей
-$ sudo make list-defconfigs	# Показать список возможных конфигураций
+$ make show-targets		# Показать список целей
+$ make list-defconfigs		# Показать список возможных конфигураций
+$ make sdk			# генерирует Toolchain
+
+$ make distclean		# Сброс Buildroot для новой цели. Чтобы удалить все продукты сборки, а также конфигурацию
 ```
 Настройки сети:
 ```
@@ -98,5 +102,45 @@ $ sudo make list-defconfigs	# Показать список возможных �
 #	address 192.168.63.136
 #	netmask 255.255.255.0
 #	gateway 192.168.63.1
+```
+Добавление своего пакета в Buildroot:
+```
+$ cd package/
+$ mkdir helloARM
+$ cd helloARM/
+$ touch Config.in
+$ vi Config.in			# Добавляем в файл:
+
+config BR2_PACKAGE_HELLOARM
+        bool "helloARM"
+        help
+          This is a comment that explains what helloARM is.
+
+          https://blablacode.ru/blablacode_auto_helloworld-0.01.tar.gz
+
+
+$ touch auto_helloARM.mk
+$ vi auto_helloARM.mk		# Добавляем в файл:
+
+HELLOARM_VERSION = 0.01
+HELLOARM_SOURCE = auto_helloARM-$(HELLOARM_VERSION).tar.gz
+HELLOARM_SITE = https://blablacode.ru/
+HELLOARM_INSTALL_STAGING = YES
+HELLOARM_INSTALL_TARGET = YES
+HELLOARM_DEPENDENCIES = host-pkgconf
+
+$(eval $(autotools-package))
+
+
+# в файл package/Config.in добавить пункт меню в раздел Target packages после busybox:
+
+menu "Target packages"
+
+        source "package/busybox/Config.in"
+        source "package/helloARM/Config.in"
+
+# Можно пробовать запускать
+$ make menuconfig
+$ make
 ```
 
