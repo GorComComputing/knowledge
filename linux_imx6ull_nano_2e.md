@@ -126,14 +126,30 @@ $ touch auto_helloARM.mk
 $ vi auto_helloARM.mk
 # Добавляем в файл:
 
-HELLOARM_VERSION = 0.01
-HELLOARM_SOURCE = auto_helloARM-$(HELLOARM_VERSION).tar.gz
-HELLOARM_SITE = https://blablacode.ru/
-HELLOARM_INSTALL_STAGING = YES
-HELLOARM_INSTALL_TARGET = YES
-HELLOARM_DEPENDENCIES = host-pkgconf
+################################################################################
+#
+# helloARM
+#
+################################################################################
 
-$(eval $(autotools-package))
+HELLOARM_VERSION = 0.01
+HELLOARM_SOURCE = helloARM-$(HELLOARM_VERSION).tar.gz
+HELLOARM_SITE = package/helloARM/src
+HELLOARM_SITE_METHOD = local	# Other methods like git,wget,scp,file etc. are also available.
+# HELLOARM_INSTALL_STAGING = YES
+# HELLOARM_INSTALL_TARGET = YES
+# HELLOARM_DEPENDENCIES = host-pkgconf
+
+define HELLOARM_BUILD_CMDS
+    $(MAKE) CC="$(TARGET_CC)" LD="$(TARGET_LD)" -C $(@D)
+endef
+
+define HELLOARM_INSTALL_TARGET_CMDS
+    $(INSTALL) -D -m 0755 $(@D)/helloARM  $(TARGET_DIR)/usr/bin
+endef
+
+$(eval $(generic-package))
+
 
 
 # в файл package/Config.in добавить пункт меню в раздел Target packages после busybox:
@@ -142,6 +158,32 @@ menu "Target packages"
 
         source "package/busybox/Config.in"
         source "package/helloARM/Config.in"
+
+$ mkdir package/helloARM/src
+$ cd package/helloARM/src/
+$ touch helloARM.c
+$ vi helloARM.c
+
+#include <stdio.h>
+int main(void) {
+	printf("HelloARM\n");
+}
+
+
+$ touch Makefile
+$ vi Makefile
+
+
+.PHONY: clean
+.PHONY: helloARM
+
+helloARM: helloARM.c
+    $(CC) -o '$@' '$<'
+
+clean:
+    -rm helloARM
+
+
 
 # Можно пробовать запускать
 $ make menuconfig
