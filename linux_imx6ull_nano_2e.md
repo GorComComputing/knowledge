@@ -133,7 +133,7 @@ $ vi helloARM.mk
 ################################################################################
 
 HELLOARM_VERSION = 0.01
-HELLOARM_SOURCE = helloARM-$(HELLOARM_VERSION).tar.gz
+# HELLOARM_SOURCE = helloARM-$(HELLOARM_VERSION).tar.gz
 HELLOARM_SITE = package/helloARM/src
 HELLOARM_SITE_METHOD = local# Other methods like git,wget,scp,file etc. are also available.
 # HELLOARM_INSTALL_STAGING = YES
@@ -146,6 +146,7 @@ endef
 
 define HELLOARM_INSTALL_TARGET_CMDS
     $(INSTALL) -D -m 0755 $(@D)/helloARM  $(TARGET_DIR)/usr/bin
+    $(INSTALL) -D -m 0755 $(@D)/helloGO  $(TARGET_DIR)/usr/bin
 endef
 
 $(eval $(generic-package))
@@ -168,24 +169,42 @@ int main(void) {
 	printf("HelloARM\n");
 }
 
+$ touch helloGO.go
+$ vi helloGO.go
+
+package main
+import "fmt"
+func main() {
+    fmt.Println("Hello Go ARM")
+}
+
 
 $ touch Makefile
 $ vi Makefile
 
 
+#CC=/home/gor/imx6ull-nano-2e/buildroot/output/host/usr/bin/arm-buildroot-linux-uclibcgnueabihf-gcc
+
 .PHONY: clean
-.PHONY: helloARM
+.PHONY: all
+
+all: helloARM helloGO
 
 helloARM: helloARM.c
-    $(CC) -o '$@' '$<'
+        $(CC) -o $@ $<
+
+helloGO: helloGO.go
+        GOOS=linux GOARCH=arm go build -o $@ $<
 
 clean:
-    -rm helloARM
+        rm -f helloARM
+        rm -f helloGO
+
 
 
 
 # Можно пробовать запускать
 $ make menuconfig
-$ make
+$ make -j4
 ```
 
