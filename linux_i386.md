@@ -7,8 +7,12 @@ $ sudo apt install gcc-multilib g++-multilib
 # Компиляция с параметром -static
 $ gcc -m32 -ggdb3 -O0 -pedantic-errors -std=c89   -Wall -Wextra -pedantic -static  -o init_i386 init.c
 
+# Клонирование ядра Linux с репозитория
+$ git clone git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git linux
+$ cd linux
+$ git checkout v5.19.1
+
 # Собираем ядро Linux
-$ cd linux/
 $ make ARCH=i386 i386_defconfig
 $ make ARCH=i386 menuconfig      # Запуск меню конфигуратора
 $ make ARCH=i386 -j2
