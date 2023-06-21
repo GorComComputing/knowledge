@@ -10,6 +10,7 @@ $ gcc -m32 -ggdb3 -O0 -pedantic-errors -std=c89   -Wall -Wextra -pedantic -stati
 # Собираем ядро Linux
 $ cd linux/
 $ make ARCH=i386 i386_defconfig
+$ make ARCH=i386 menuconfig      # Запуск меню конфигуратора
 $ make ARCH=i386 -j2
 
 # Запускаем ядро Linux и корневую файловую систему в Qemu
