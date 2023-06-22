@@ -75,3 +75,11 @@ grub> boot                                # запуск ядра Linux
 
 grub> reboot                              # перезагрузка
 ```
+Файл /boot/grub/grub.cfg
+```
+menuentry 'kernel 701' {
+  set root='hd0,msdos1'
+  linux /boot/kernel-701 ro
+  initrd /boot/initramfs.cpio.gz
+}
+```
