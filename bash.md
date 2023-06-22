@@ -16,6 +16,7 @@ $ usermod -aG sudo goryachev   # добавить пользователя в г
 $ su - goryachev  # Сменить пользователя
 $ su -            # Сменить пользователя на root
 $ ps        # показать список процессов
+$ ps -A     # показать все процессы
 $ sudo useradd -m username    # создать пользователя вместе с домашним каталогом
 $ sudo passwd username        # задать пароль пользователя
 $ sudo service lightdm restart      # перезапуск x-server
