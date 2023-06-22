@@ -32,8 +32,14 @@ gpsd
 ```
 # Установка
 $ sudo apt-get install gpsd
+$ sudo apt-get install gpsd-clients
 
-$ gpsd /dev/ttyUSB0        # запуск демона
-$ xgps                     # запуск клиента GUI
+$ sudo gpscat -s 9600 /dev/ttyUSB0       # Просмотреть прямой вывод с устройства (9600 — скорость обмена)
+$ sudo gpsmon /dev/ttyUSB0               # Форматный вывод с распарсиванием строки
+$ sudo gpsd -S 2727 /dev/ttyUSB0 9600    # Запускаем GPSD daemon транслировать данные на localhost:2727
+$ gpsmon localhost:2727                  # Проверяем приход данных на локальный порт
+
+$ gpsd /dev/ttyUSB0                      # запуск демона
+$ xgps                                   # запуск клиента GUI
 ```
 
