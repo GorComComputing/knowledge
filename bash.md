@@ -22,6 +22,8 @@ $ sudo service lightdm restart      # перезапуск x-server
 $ sudo dpkg -i NOMBRE-DEL-PAQUETE.deb   # установка из пакета deb скачанного с сайта
 $ echo "Hello" > /dev/tty     # вывод на стандартный терминал
 
+$ date                        # показывает системное время
+
 $ diff myfile1 myfile2 > changes.diff        # сравнивает два файла и разницу записывает в третий
 
 
