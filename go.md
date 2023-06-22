@@ -5,7 +5,7 @@
 # Установка
 $ sudo apt update
 $ sudo apt upgrade
-$ sudo apt install golang
+$ sudo apt install golang git
 $ go env -w GO111MODULE=off
 # Проверка работы
 $ go version
