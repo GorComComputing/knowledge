@@ -16,9 +16,9 @@ time.apple.com
 ```
 
 Chrony:
-- демон chronyd
-- инструмент командной строки chronyc
-В файле /etc/chrony.conf список NTP-серверов
+- chronyd - демон
+- chronyc - инструмент командной строки
+В файле /etc/chrony/chrony.conf список NTP-серверов
 ```
 # Установка
 $ sudo apt install chrony
