@@ -3,6 +3,7 @@
 - [CURL](https://github.com/GorComComputing/knowledge/blob/main/curl.md)
 - [LXC](https://github.com/GorComComputing/knowledge/blob/main/lxc.md)
 - [Установка Linux Ubuntu](https://github.com/GorComComputing/knowledge/blob/main/linux_install.md)
+- [NTP](https://github.com/GorComComputing/knowledge/blob/main/ntp.md)
 #### Embedded Linux
 - [Crosstool-NG](https://github.com/GorComComputing/knowledge/blob/main/crosstool_ng.md)
 - [U-Boot](https://github.com/GorComComputing/knowledge/blob/main/u_boot.md)
