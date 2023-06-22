@@ -23,7 +23,9 @@ Chrony:
 # Установка
 $ sudo apt install chrony
 
-# Статус активности и количество подключенных серверов и пиров
-$ chronyc activity
+$ chronyc activity          # Статус активности и количество подключенных серверов и пиров
+$ chronyc tracking          # показать какой сервер отслеживает chrony
+$ chronyc sources -v        # список серверов доступных системе
+$ chronyc sourcestats -v    # дополнительная статистика каждого сервера
 ```
 
