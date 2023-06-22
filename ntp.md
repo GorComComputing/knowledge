@@ -15,3 +15,15 @@ pool.ntp.org
 time.apple.com
 ```
 
+Chrony:
+- демон chronyd
+- инструмент командной строки chronyc
+В файле /etc/chrony.conf список NTP-серверов
+```
+# Установка
+$ sudo apt install chrony
+
+# Статус активности и количество подключенных серверов и пиров
+$ chronyc activity
+```
+
