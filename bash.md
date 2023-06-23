@@ -21,7 +21,8 @@ $ sudo useradd -m username    # создать пользователя вмес
 $ sudo passwd username        # задать пароль пользователя
 $ sudo service lightdm restart      # перезапуск x-server
 $ sudo dpkg -i NOMBRE-DEL-PAQUETE.deb   # установка из пакета deb скачанного с сайта
-$ echo "Hello" > /dev/tty     # вывод на стандартный терминал
+$ echo "Hello" > /dev/tty         # вывод на стандартный терминал
+$ kill -9 25609                   # убить процесс (отправит процессу сигнал 9)
 
 $ date                        # показывает системное время
 
