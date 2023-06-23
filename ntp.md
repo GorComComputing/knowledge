@@ -52,6 +52,10 @@ $ chronyc makestep                    # ручное обновление вре
 # Добавить службу в автозапуск
 $ systemctl enable chrony             # [On SystemD]
 $ chkconfig --add chronyd             # [On Init]
+
+# Остановить chrony
+$ systemctl stop chrony               # [On SystemD]
+$ /etc/init.d/chronyd stop            # [On Init]
 ```
 gpsd
 ```
