@@ -77,6 +77,8 @@ $ nano /etc/default/gpsd
     DEVICES="/dev/ttyUSB0"
     GPSD_OPTIONS="-n"
 
-$ systemctl restart gpsd                # перезапуск gpsd
+# перезапуск gpsd
+$ systemctl daemon-reload
+$ systemctl restart gpsd              
 ```
 
