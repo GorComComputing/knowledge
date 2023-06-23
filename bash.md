@@ -101,6 +101,11 @@ $ groups                  # в каких группах состоит поль
 $ compgen -g              # какие есть группы вообще
 $ sudo usermod -a -G tty yourname    # добавить пользователя в группу
 $ newgrp groupname        # создать группу
+
+# Просмотреть открытые сетевые порты
+$ sudo apt install net-tools
+$ sudo netstat -tulpn
+
 ```
 Чтобы освободить место в коневой файловой системе
 ```
