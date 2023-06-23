@@ -15,7 +15,7 @@ pool.ntp.org
 time.apple.com
 ```
 
-Chrony:
+chrony:
 - chronyd - демон
 - chronyc - инструмент командной строки
 В файле /etc/chrony/chrony.conf список NTP-серверов. В конце файла добавить строку и перезапустить сервер времени:
@@ -57,7 +57,7 @@ $ chkconfig --add chronyd             # [On Init]
 $ systemctl stop chrony               # [On SystemD]
 $ /etc/init.d/chronyd stop            # [On Init]
 ```
-gpsd
+gpsd:
 ```
 # Установка
 $ sudo apt-get install gpsd
