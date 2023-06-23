@@ -33,16 +33,25 @@ $ chronyc activity          # Статус активности и количе�
 $ chronyc tracking          # показать какой сервер отслеживает chrony
 $ chronyc sources -v        # список серверов доступных системе
 $ chronyc sourcestats -v    # дополнительная статистика каждого сервера
+$ sudo chronyc ntpdata 91.189.94.4    # сведения о сервере
 
 $ sudo systemctl status chronyd       # узнать статус демона chronyd
+$ service chrony status
+$ etc/init.d/chronyd status
+
 $ sudo systemctl restart chronyd      # перезапуск демона chronyd
+$ /etc/init.d/chrony restart          # перезапуск сервера времени
+
 $ sudo timedatectl set-ntp true       # синхронизировать сервер
 
-$ /etc/init.d/chrony restart          # перезапуск сервера времени
 
 $ sudo chronyc clients                # показать список добавленных клиентов
 
 $ chronyc makestep                    # ручное обновление времени
+
+# Добавить службу в автозапуск
+$ systemctl enable chrony             # [On SystemD]
+$ chkconfig --add chronyd             # [On Init]
 ```
 gpsd
 ```
