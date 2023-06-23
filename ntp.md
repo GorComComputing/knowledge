@@ -79,6 +79,8 @@ $ nano /etc/default/gpsd
 
 # перезапуск gpsd
 $ systemctl daemon-reload
-$ systemctl restart gpsd              
+$ systemctl restart gpsd
+
+$ systemctl status gpsd                # узнать статус gpsd            
 ```
 
