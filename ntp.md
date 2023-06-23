@@ -20,7 +20,10 @@ Chrony:
 - chronyc - инструмент командной строки
 В файле /etc/chrony/chrony.conf список NTP-серверов. В конце файла добавить строку и перезапустить сервер времени:
 ```
+$ sudo nano /etc/chrony/chrony.conf
+
 server pool.ntp.org
+allow 192.168/16
 ```
 ```
 # Установка
@@ -33,8 +36,11 @@ $ chronyc sourcestats -v    # дополнительная статистика 
 
 $ sudo systemctl status chronyd       # узнать статус демона chronyd
 $ sudo systemctl restart chronyd      # перезапуск демона chronyd
+$ sudo timedatectl set-ntp true       # синхронизировать сервер
 
 $ /etc/init.d/chrony restart          # перезапуск сервера времени
+
+$ sudo chronyc clients                # показать список добавленных клиентов
 ```
 gpsd
 ```
