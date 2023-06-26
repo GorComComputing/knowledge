@@ -29,6 +29,8 @@ allow 192.168/16
 # Установка
 $ sudo apt install chrony
 
+$ chronyd                   # запуск демона
+
 $ chronyc activity          # Статус активности и количество подключенных серверов и пиров
 $ chronyc tracking          # показать какой сервер отслеживает chrony
 $ chronyc sources -v        # список серверов доступных системе
