@@ -9,6 +9,8 @@
 - [Параметры ядра в GRUB еще](https://ru.manpages.org/bootparam/7)
 - [Multiboot Specification](https://ru.wikipedia.org/wiki/Multiboot_Specification)
 - [gpsd](https://www.linux-magazine.com/Issues/2018/210/Tutorial-gpsd)
+- [Web-terminal на Go](https://github.com/gravitational/console-demo/tree/master)
+
 
 
 
