@@ -29,7 +29,11 @@ allow 192.168/16
 # Установка
 $ sudo apt install chrony
 
-$ chronyd                   # запуск демона
+# на Linux из Buildroot
+$ chronyd                       # запуск демона
+$ /etc/init.d/chrony start      # запустить chrony
+$ /etc/init.d/chrony stop       # остановить chrony
+$ /etc/init.d/chrony restart    # перезапустить chrony 
 
 $ chronyc activity          # Статус активности и количество подключенных серверов и пиров
 $ chronyc tracking          # показать какой сервер отслеживает chrony
