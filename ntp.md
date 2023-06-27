@@ -104,3 +104,8 @@ $ echo "Hello" > /tmp/my_pty
 $ cat  /tmp/my_pty
 ```
 
+```
+# Wireshark - протокол NTP работает на UDP порт 123
+udp.dstport == 123
+```
+
