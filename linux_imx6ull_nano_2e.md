@@ -10,27 +10,27 @@ $ git checkout 2019.11.1
 # Очистка
 $ make clean
 
-# перенести файл с конфигурацией устройства в каталог buildroot/configs
+# Перенести файл с конфигурацией устройства в каталог buildroot/configs
 $ sudo cp imx6ullsk_nano_2eth_defconfig.txt /var/lib/lxc/work/rootfs/home/gor/imx6ull-nano-2e/buildroot/configs/imx6ullsk_nano_2eth_defconfig
 
 # Выбор типовой конфигурации для iMX6ULL-NANO-2E
 $ make imx6ullsk_nano_2eth_defconfig
 
-# перенести файл с конфигурацией устройства в каталог buildroot/
+# Перенести файл с конфигурацией в каталог buildroot/
 $ sudo cp .config /var/lib/lxc/work/rootfs/home/gor/imx6ull-nano-2e/buildroot/.config
  
 # Меню конфигурации Buildroot
 $ make menuconfig
 
-# перенести файл с ядром Linux в каталог buildroot/dl/linux/
+# Перенести файл с ядром Linux в каталог buildroot/dl/linux/
 $ sudo cp linux_imx_4.9.x_1.0.0_ga-sk.tar.bz2 /var/lib/lxc/work/rootfs/home/gor/imx6ull-nano-2e/buildroot/dl/linux/
-# перенести файл с U-Boot в каталог buildroot/dl/u-boot/
+# Перенести файл с U-Boot в каталог buildroot/dl/u-boot/
 $ sudo cp uboot_imx_4.9.x_1.0.0_ga-sk.tar.bz2 /var/lib/lxc/work/rootfs/home/gor/imx6ull-nano-2e/buildroot/dl/uboot/
-# перенести каталог starterkit в каталог buildroot/board/
+# Перенести каталог starterkit в каталог buildroot/board/
 $ sudo cp -r starterkit /var/lib/lxc/work/rootfs/home/gor/imx6ull-nano-2e/buildroot/board/
 $ sudo chown gor board/starterkit
 $ mkdir output/images/src
-# перенести файл genimage.cfg.template_imx6 в каталог buildroot/board/freescale/common/imx/
+# Перенести файл genimage.cfg.template_imx6 в каталог buildroot/board/freescale/common/imx/
 $ sudo cp -r freescale/common/imx/genimage.cfg.template_imx6 /var/lib/lxc/work/rootfs/home/gor/imx6ull-nano-2e/buildroot/board/freescale/common/imx/
 
 # Запуск сборки
@@ -95,7 +95,7 @@ $ make distclean		# Сброс Buildroot для новой цели. Чтобы 
 ```
 Настройки сети:
 ```
-В файле /etc/network/interfaces закомметировать eth1:
+В файле /etc/network/interfaces закомментировать eth1:
 
 #auto eth1
 #iface eth1 inet static
@@ -105,9 +105,12 @@ $ make distclean		# Сброс Buildroot для новой цели. Чтобы 
 ```
 Добавление своего пакета в Buildroot:
 ```
+# В каталоге buildroot/package/ создать каталог нового пакета
 $ cd package/
 $ mkdir helloARM
 $ cd helloARM/
+
+# Создать файл Config.in
 $ touch Config.in
 $ vi Config.in
 # Добавляем в файл:
@@ -122,6 +125,7 @@ config BR2_PACKAGE_HELLOARM
           https://helloARM
 
 
+# Создать файл helloARM.mk
 $ touch helloARM.mk
 $ vi helloARM.mk
 # Добавляем в файл:
@@ -153,22 +157,28 @@ $(eval $(generic-package))
 
 
 
-# в файл package/Config.in добавить пункт меню в раздел Target packages после busybox:
+# В файл package/Config.in добавить пункт меню в раздел Target packages (после busybox):
 
 menu "Target packages"
 
         source "package/helloARM/Config.in"
 
+
+# В каталоге buildroot/package/helloARM/ создать каталог для исходных кодов
 $ mkdir package/helloARM/src
 $ cd package/helloARM/src/
+
+# В каталоге buildroot/package/helloARM/src/ можно создавать файлы с исходными кодами
+# ... например, на C
 $ touch helloARM.c
 $ vi helloARM.c
 
 #include <stdio.h>
 int main(void) {
-	printf("HelloARM\n");
+	printf("Hello C ARM\n");
 }
 
+# ... или, например, на Go
 $ touch helloGO.go
 $ vi helloGO.go
 
@@ -178,12 +188,13 @@ func main() {
     fmt.Println("Hello Go ARM")
 }
 
-
+# В этом же каталоге добавить Makefile
 $ touch Makefile
 $ vi Makefile
 
 
 #CC=/home/gor/imx6ull-nano-2e/buildroot/output/host/usr/bin/arm-buildroot-linux-uclibcgnueabihf-gcc
+#GC=/home/gor/imx6ull-nano-2e/buildroot/output/host/usr/bin/arm-buildroot-linux-uclibcgnueabihf-gcc
 
 .PHONY: clean
 .PHONY: all
