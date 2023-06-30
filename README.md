@@ -5,6 +5,7 @@
 - [Установка Linux Ubuntu](https://github.com/GorComComputing/knowledge/blob/main/linux_install.md)
 - [NTP](https://github.com/GorComComputing/knowledge/blob/main/ntp.md)
 - [WinSCP](https://github.com/GorComComputing/knowledge/blob/main/winscp.md)
+- [AnyDesk](https://github.com/GorComComputing/knowledge/blob/main/anydesk.md)
 #### Embedded Linux
 - [Crosstool-NG](https://github.com/GorComComputing/knowledge/blob/main/crosstool_ng.md)
 - [U-Boot](https://github.com/GorComComputing/knowledge/blob/main/u_boot.md)
