@@ -142,7 +142,14 @@ Host 192.168.0.254
 ```
 Создание iso-образа с диска:
 ```
-dd if=/dev/cdrom of=win7.iso bs=2048
-sudo mount -o loop win7.iso /media/ 
+$ dd if=/dev/cdrom of=win7.iso bs=2048
+$ sudo mount -o loop win7.iso /media/ 
+```
+Создание нового пользователя:
+```
+$ sudo useradd -m -s /bin/bash -c "tarasov" tarasov
+$ sudo passwd tarasov
+$ sudo usermod -aG sudo tarasov
+$ su - tarasov
 ```
 
