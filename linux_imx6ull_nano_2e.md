@@ -194,7 +194,7 @@ $ vi Makefile
 
 
 #CC=/home/gor/imx6ull-nano-2e/buildroot/output/host/usr/bin/arm-buildroot-linux-uclibcgnueabihf-gcc
-#GC=/home/gor/imx6ull-nano-2e/buildroot/output/host/usr/bin/arm-buildroot-linux-uclibcgnueabihf-gcc
+#GO=/bin/go
 
 .PHONY: clean
 .PHONY: all
@@ -214,8 +214,10 @@ clean:
 
 
 
-# Можно пробовать запускать
+# Можно пробовать запускать сборку Buildroot
 $ make menuconfig
 $ make -j4
+
+# После сборки скомпилированные бинарные файлы новго пакета будут лежать в корневой файловой системе Linux в каталоге /usr/bin/
 ```
 
