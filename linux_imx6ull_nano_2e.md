@@ -48,7 +48,7 @@ $ ls output/images/
 
 Установить приглашение ввода [user@hostname]:currentpath$:  
 в файле /etc/profile 
-```
+```bash
 PS1='\u@\h:\w$'
 export PS1
 
@@ -71,7 +71,7 @@ Target options
 	-> ARM instruction set 			= Thumb2
 ```
 Основные команды Buildroot:
-```
+```bash
 $ make 				# сборка системы
 $ make menuconfig 		# запуск меню настроек и состава требуемых пакетов
 $ clean 			# очистка системы, ВНИМАНИЕ!!! Полностью удаляется содержимое папки output, что удалит все изменения в исходных кодах и настройки, перед чисткой нужно позаботится об этом.
@@ -93,10 +93,8 @@ $ make sdk			# генерирует Toolchain
 
 $ make distclean		# Сброс Buildroot для новой цели. Чтобы удалить все продукты сборки, а также конфигурацию
 ```
-Настройки сети:
-```
-В файле /etc/network/interfaces закомментировать eth1:
-
+Настройки сети (в файле /etc/network/interfaces закомментировать eth1):
+```bash
 #auto eth1
 #iface eth1 inet static
 #	address 192.168.63.136
@@ -104,7 +102,7 @@ $ make distclean		# Сброс Buildroot для новой цели. Чтобы 
 #	gateway 192.168.63.1
 ```
 Добавление своего пакета в Buildroot:
-```
+```bash
 # В каталоге buildroot/package/ создать каталог нового пакета
 $ cd package/
 $ mkdir helloARM
@@ -188,7 +186,17 @@ func main() {
     fmt.Println("Hello Go ARM")
 }
 
-# В этом же каталоге добавить Makefile
+
+# Установка компилятора Go
+$ sudo apt update
+$ sudo apt upgrade
+$ sudo apt install golang git
+$ go env -w GO111MODULE=off
+# Проверка работы Go (по умолчанию Go находится в каталоге /bin/)
+$ go version
+
+
+# В этом же каталоге buildroot/package/helloARM/src/ добавить Makefile
 $ touch Makefile
 $ vi Makefile
 
@@ -204,12 +212,16 @@ all: helloARM helloGO
 helloARM: helloARM.c
         $(CC) -o $@ $<
 
-helloGO: helloGO.go
+helloGO: *.go deps
         GOOS=linux GOARCH=arm go build -o $@ $<
 
 clean:
         rm -f helloARM
         rm -f helloGO
+
+.PHONY:deps
+deps:
+	#go get github.com/gorilla/sessions
 
 
 
