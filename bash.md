@@ -3,23 +3,32 @@
 
 ```bash
 # Команды
-$ ls        # содержимое каталога
+$ ls              # содержимое каталога
 $ ls | less       # постраничный вывод Space - вперед, b - назад, q - выход
-$ cd        # сменить каталог
-$ mkdir     # создать каталог
-$ pwd       # показать путь текущего каталога
-$ touch     # создать файл
-$ rm -r     # удалить (ключ -r рекурсивно для каталогов)
-$ openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout key.pem -out cert.pem   # генерирует файлы ключей HTTPS
+$ less            # просмотр содержимого файла с пейджингом
+$ ls -a           # показать скрытые файлы
+$ ls -aF          # показать каталоги и скрытые файлы
+
+$ cd              # сменить каталог
+$ mkdir           # создать каталог
+$ pwd             # показать путь текущего каталога
+$ touch           # создать файл
+$ rm -r           # удалить (ключ -r рекурсивно для каталогов)
+
+$ mv              # переименование или перемещение файла
+$ rmdir           # удалить каталог
+
+
+$ openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout key.pem -out cert.pem      # генерирует файлы ключей HTTPS
 $ adduser goryachev            # создать пользователя
 $ usermod -aG sudo goryachev   # добавить пользователя в группу sudo
 $ su - goryachev  # Сменить пользователя
 $ su -            # Сменить пользователя на root
-$ ps        # показать список процессов
-$ ps -A     # показать все процессы
+$ ps              # показать список процессов
+$ ps -A           # показать все процессы
 $ sudo useradd -m username    # создать пользователя вместе с домашним каталогом
 $ sudo passwd username        # задать пароль пользователя
-$ sudo service lightdm restart      # перезапуск x-server
+$ sudo service lightdm restart          # перезапуск x-server
 $ sudo dpkg -i NOMBRE-DEL-PAQUETE.deb   # установка из пакета deb скачанного с сайта
 $ echo "Hello" > /dev/tty         # вывод на стандартный терминал
 $ kill -9 25609                   # убить процесс (отправит процессу сигнал 9)
@@ -152,4 +161,13 @@ $ sudo passwd tarasov
 $ sudo usermod -aG sudo tarasov
 $ su - tarasov
 ```
-
+Пример bash-скрипта:
+```
+#!/bin/sh
+DIR=Photoalbum/2015
+[ "$1" = "" ] && { echo "No dir name"; exit 1; }
+mkdir $DIR/$1
+mount /mnt/flash
+cp /mnt/flas/dcim/* $DIR/$1
+umount /mnt/flash
+```
