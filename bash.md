@@ -117,7 +117,7 @@ $ sudo netstat -tulpn
 
 ```
 Чтобы освободить место в коневой файловой системе
-```
+```bash
 # Очистить кеш /var/cache/apt/archives 
 $ sudo apt-get clean    
 
@@ -139,7 +139,7 @@ $ ln -s /home/var /var
 Ctrl+H
 ```
 SSH
-```
+```bash
 # Подключение
 $ ssh  root@192.168.0.254
 
@@ -150,19 +150,19 @@ Host 192.168.0.254
     KexAlgorithms +diffie-hellman-group1-sha1
 ```
 Создание iso-образа с диска:
-```
+```bash
 $ dd if=/dev/cdrom of=win7.iso bs=2048
 $ sudo mount -o loop win7.iso /media/ 
 ```
 Создание нового пользователя:
-```
+```bash
 $ sudo useradd -m -s /bin/bash -c "tarasov" tarasov
 $ sudo passwd tarasov
 $ sudo usermod -aG sudo tarasov
 $ su - tarasov
 ```
 Пример bash-скрипта:
-```
+```bash
 #!/bin/sh
 DIR=Photoalbum/2015
 [ "$1" = "" ] && { echo "No dir name"; exit 1; }
@@ -170,4 +170,14 @@ mkdir $DIR/$1
 mount /mnt/flash
 cp /mnt/flas/dcim/* $DIR/$1
 umount /mnt/flash
+```
+Перенаправление потоков ввода-вывода:
+```bash
+$ cmd1 > file1            # запустить программу cmd1, направив ее вывод в файл file1; если файл существует, он будет перезаписан с нуля, если не существует - будет создан
+$ cmd1 >> file1           # запустить программу cmd1, дописав ее вывод в конец файла file1; если файла не существует, он будет создан
+$ cmd2 < file2            # запустить программу cmd2, подав ей содержимое файла file2 в качестве стандартного ввода; если файла не существует, произойдет ошибка
+$ cmd3 > file1 < file2    # запустить программу cmd3, перенаправив как ввод, так и вывод
+$ cmd1 | cmd2             # запустить одновременно программы cmd1 и cmd2, подав данные со стандартного вывода первой на стандартный ввод второй (конвейер)
+$ cmd4 2> errfile         # направить поток сообщений об ошибках в файл errfile
+$ cmd5 2>&1 | cmd6        # объединить потоки стандартного вывода и диагностики программы cmd5 и направить на стандартный ввод программы cmd6
 ```
