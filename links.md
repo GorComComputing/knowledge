@@ -11,6 +11,8 @@
 - [gpsd](https://www.linux-magazine.com/Issues/2018/210/Tutorial-gpsd)
 - [Web-terminal на Go](https://github.com/gravitational/console-demo/tree/master)
 - [Go TUI Tview](https://earthly.dev/blog/tui-app-with-go/)
+- [Иконки Bootstrap](https://icons.bootstrap-5.ru/)
+
 
 
 
