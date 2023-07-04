@@ -22,6 +22,7 @@
 - [Go](https://github.com/GorComComputing/knowledge/blob/main/go.md)
 - [PostgreSQL](https://github.com/GorComComputing/knowledge/blob/main/postgresql.md)
 #### Web-frontend
+- [HTML](https://github.com/GorComComputing/knowledge/blob/main/html.md)
 - [Chrome](https://github.com/GorComComputing/knowledge/blob/main/chrome.md)
 #### Контроль версий
 - [Git](https://github.com/GorComComputing/knowledge/blob/main/git.md)
