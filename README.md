@@ -24,7 +24,7 @@
 - [Chrome](https://github.com/GorComComputing/knowledge/blob/main/chrome.md)
 #### Контроль версий
 - [Git](https://github.com/GorComComputing/knowledge/blob/main/git.md)
-- 
+#### Другие ссылки
 - [Ссылки](https://github.com/GorComComputing/knowledge/blob/main/links.md)
 
 
