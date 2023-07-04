@@ -36,7 +36,7 @@ $ git checkout <branch_name>      # переключение между ветк
 $ git checkout -b <new_branch>    # создать новую ветку и переключиться на неё
 
 $ git branch -vv            # покажет какие ветки есть локально и с какими внешними ветками связаны
-$ git branch --move bad-branch-name corrected-branch-name        # переименовать ветку
+$ git branch --move master main   # переименовать ветку
 
 $ git remote remove origin        # удалить адрес удаленного репозитория
 ```
