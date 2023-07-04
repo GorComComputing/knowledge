@@ -22,7 +22,9 @@
 - [PostgreSQL](https://github.com/GorComComputing/knowledge/blob/main/postgresql.md)
 #### Web-frontend
 - [Chrome](https://github.com/GorComComputing/knowledge/blob/main/chrome.md)
-
+#### Контроль версий
+- [Git](https://github.com/GorComComputing/knowledge/blob/main/git.md)
+- 
 - [Ссылки](https://github.com/GorComComputing/knowledge/blob/main/links.md)
 
 
