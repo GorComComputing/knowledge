@@ -14,3 +14,4 @@ tcp   LISTEN 0      244               [::]:5432          [::]:*    uid:130 ino:6
 $ sudo ufw allow 5432/tcp
 Rules updated
 Rules updated (v6)
+```
