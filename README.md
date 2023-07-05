@@ -1,5 +1,6 @@
 #### Linux
 - [Bash](https://github.com/GorComComputing/knowledge/blob/main/bash.md)
+- [Vim](https://github.com/GorComComputing/knowledge/blob/main/vim.md)
 - [CURL](https://github.com/GorComComputing/knowledge/blob/main/curl.md)
 - [LXC](https://github.com/GorComComputing/knowledge/blob/main/lxc.md)
 - [Установка Linux Ubuntu](https://github.com/GorComComputing/knowledge/blob/main/linux_install.md)
