@@ -1,6 +1,7 @@
 #### Linux
 - [Bash](https://github.com/GorComComputing/knowledge/blob/main/bash.md)
 - [Vim](https://github.com/GorComComputing/knowledge/blob/main/vim.md)
+- [Make](https://github.com/GorComComputing/knowledge/blob/main/make.md)
 - [Man](https://github.com/GorComComputing/knowledge/blob/main/man.md)
 - [CURL](https://github.com/GorComComputing/knowledge/blob/main/curl.md)
 - [LXC](https://github.com/GorComComputing/knowledge/blob/main/lxc.md)
