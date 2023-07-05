@@ -221,6 +221,39 @@ I=$(( $I + 7 ))
 [ "$A" = "abc" ]          # значение переменной A является строкой abc
 [ "$A" != "abc" ]         # значение переменной A не является строкой abc
 
+# конструкции ветвления
+if [ -f "file.txt" ]; then
+    cat "file.txt"
+else
+    echo "File not found"
+fi
+
+# конструкции ветвления без использования [ ]
+if test -f "file.txt" ; then
+    cat "file.txt"
+else
+    echo "File not found"
+fi
+
+# любая команда может быть условием
+if mkdir new_dir ; then
+    echo "Directory created"
+else
+    echo "Failed to make new directory"
+fi
+
+# цикл while
+I=1
+while [ $I -le 100 ]; do
+    echo $I
+    I=$(( I + 1 ))
+done
+
+# цикл for
+for C in red orange yellow; do
+    echo $C
+done
+
 
 echo "Количество параметров " $#
 
