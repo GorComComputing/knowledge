@@ -134,6 +134,7 @@ $ stty -F /dev/ttyUSB0 `cat save.txt`
 
 # отображает шестнадцатеричные данные
 $ hexdump -C /dev/tty
+$ hexdump -C file.txt
 
 $ dmesg -w                # отображает события ядра
 
