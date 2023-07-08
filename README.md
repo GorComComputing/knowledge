@@ -21,8 +21,10 @@
 - [Linux All](https://github.com/GorComComputing/knowledge/blob/main/linux_all.md)
 - [Linux i386](https://github.com/GorComComputing/knowledge/blob/main/linux_i386.md)
 - [Linux iMX6ULL-NANO-2E](https://github.com/GorComComputing/knowledge/blob/main/linux_imx6ull_nano_2e.md)
-#### Web-backend
+#### Программирование
 - [Go](https://github.com/GorComComputing/knowledge/blob/main/go.md)
+- [Free Pascal](https://github.com/GorComComputing/knowledge/tree/main/pascal)
+#### Базы данных
 - [PostgreSQL](https://github.com/GorComComputing/knowledge/blob/main/postgresql.md)
 #### Web-frontend
 - [HTML](https://github.com/GorComComputing/knowledge/blob/main/html.md)
