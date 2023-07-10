@@ -12,6 +12,8 @@
 - [Web-terminal на Go](https://github.com/gravitational/console-demo/tree/master)
 - [Go TUI Tview](https://earthly.dev/blog/tui-app-with-go/)
 - [Иконки Bootstrap](https://icons.bootstrap-5.ru/)
+- [Подборка проектов на разных языках 1](https://github.com/practical-tutorials/project-based-learning)
+- [Подборка проектов на разных языках 2](https://github.com/codecrafters-io/build-your-own-x)
 
 
 
