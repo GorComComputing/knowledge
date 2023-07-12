@@ -11,6 +11,10 @@ $ sudo -i -u postgres
 
 # Запуск PostgreSQL
 $ psql
+
+# Изменение пароля пользователя
+postgres=# ALTER ROLE postgres WITH PASSWORD 'postgres';
+
 # Посмотреть информацию о саединении
 postgres=# \conninfo
 # Выход
@@ -55,9 +59,6 @@ $ pg_dump -U username -f backup.dump database_name -Fc
 # Восстановленеи базы из файла
 $ sudo cp tst_db.backup /var/lib/postgresql/      # перенести файл tst_db.backup в папку пользователя postgres
 $ pg_restore -U username -d dbname -1 filename.dump
-
-# Изменение пароля пользователя
-postgres=# ALTER ROLE postgres WITH PASSWORD 'postgres';
 ```
 Установка PostgreSQL на OpenWrt
 ```bash
