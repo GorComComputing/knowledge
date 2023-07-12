@@ -30,9 +30,6 @@ $ psql
 # Можно выбрать другую базу при запуске
 $ psql -d postgres
 
-# Задать пароль для пользователя postgres
-postgres=# ALTER ROLE postgres WITH PASSWORD 'postgres';
-
 # Создание таблицы
 postgres=# CREATE TABLE имя_таблицы (имя_колонки1 тип_колонки (длина) ограничения, имя_колонки2 тип_колонки (длина), имя_колонки3 тип_колонки (длина));
 
@@ -59,7 +56,7 @@ $ pg_dump -U username -f backup.dump database_name -Fc
 $ pg_restore -U username -d dbname -1 filename.dump
 
 # Изменение пароля пользователя
-postgres=# ALTER ROLE saeed_raza WITH PASSWORD ‘data’;
+postgres=# ALTER ROLE postgres WITH PASSWORD 'postgres';
 ```
 Установка PostgreSQL на OpenWrt
 ```bash
