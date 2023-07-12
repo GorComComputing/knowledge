@@ -187,6 +187,12 @@ SELECT title_id, type, price,
 SELECT MIN(price) AS "Min price"
   FROM titles;
 
+-- Поиск максимального значения
+SELECT MAX(price) AS "Min price"
+  FROM titles;
+
+
+
 
 
 
