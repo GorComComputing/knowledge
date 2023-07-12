@@ -20,6 +20,10 @@ $ GOOS=linux GOARCH=arm go build -o main main.go
 
 # Подключение пакетов
 $ go get github.com/lib/pq
+
+# Узнать версию glibc установленную на компьютере
+$ ldd --version
+
 ```
 Тестовая программа на Go (Hello World):
 ```
