@@ -4,6 +4,7 @@
 ```bash
 # POST-запрос
 $ curl -X POST -F 'name=andreyex' -F 'email=andreyex@example.ru' https://example.ru/contact.php
+$ curl --data "param1=test1&param2=test2" http://test.com
 
 $ curl -X POST -d 'name=andreyex&email=andreyex@example.ru' https://example.ru/contact.php
 
@@ -13,4 +14,18 @@ $ curl -X POST -d "{\"msg\":\"event\",\"level\":\"info\",\"id\":\"1234\",\"ip\":
 
 # POST-запрос загрузка файлов
 $ curl -X POST -F 'image=@/home/user/Pictures/wallpaper.jpg' http://example.ru/upload
+
+# Если никакие аргументы не указаны, то команда curl выполняет HTTP-запрос get и отображает статическое содержимое страницы
+# Оно аналогично тому, что мы видим при просмотре исходного кода в браузере
+$ curl www.google.com
+
+# Просмотр HTTP-заголовков
+$ curl -I https://www.google.com
+
+# Скачать файл
+$ curl -O https://testdomain.com/testfile.tar.gz
+$ curl -o custom_file.tar.gz https://testdomain.com/testfile.tar.gz
+
+# Игнорирование ошибки неправильных или самоподписанных сертификатов
+$ curl -k https://localhost/my_test_endpoint
 ```
