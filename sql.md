@@ -163,19 +163,19 @@ SELECT au_fname, POSITION('e' IN au_fname) AS "Pos e", au_lname, POSITION('ma' I
 
 -- Вставка строк
 INSERT INTO table
-  VALUES(value1, value2, …, valueN);
+  VALUES (value1, value2, …, valueN);
 
 INSERT INTO authors
-  VALUES('A08', 'Michael', 'Polk', '512-953-1231', '4028 Guadalupe St', 'Austin', 'TX', '78701');
+  VALUES ('A08', 'Michael', 'Polk', '512-953-1231', '4028 Guadalupe St', 'Austin', 'TX', '78701');
 
 -- Вставка строк с помощью названий столбцов
 INSERT INTO table
   (column1, column2, …, columnN)
-  VALUES(value1, value2, …, valueN);
+  VALUES (value1, value2, …, valueN);
 
 INSERT INTO authors
   (au_id, au_fname, au_lname, phone, address, city, state, zip)
-  VALUES('A09', 'Irene', 'Bell', '415-225-4689', '810 Throckmorton Ave', 'Mill Valley', 'CA', '94941');
+  VALUES ('A09', 'Irene', 'Bell', '415-225-4689', '810 Throckmorton Ave', 'Mill Valley', 'CA', '94941');
 
 -- Вставка строк из другой таблицы
 INSERT INTO publishers
