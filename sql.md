@@ -15,9 +15,16 @@ SELECT columns
   [HAVING search_condition]
   [ORDER BY sort_columns]
 
-SELECT au_fname, au_lname FROM authors;
-SELECT au_fname, au_lname FROM authors WHERE state = 'NY' ORDER BY au_lname;
-SELECT * FROM authors;
+SELECT au_fname, au_lname
+  FROM authors;
+
+SELECT au_fname, au_lname
+  FROM authors
+  WHERE state = 'NY'
+  ORDER BY au_lname;
+
+SELECT *
+  FROM authors;
 
 -- Создание псевдонимов столбцов (AS)
 SELECT au_fname AS "First name",
