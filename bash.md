@@ -198,7 +198,11 @@ Host 192.168.0.254
     KexAlgorithms +diffie-hellman-group1-sha1
 
 # Копирование файла по SSH
-$ scp ./WebServer user@172.18.0.1:~/WORK/
+$ scp file_name user@172.18.0.1:~/WORK/
+# Копирование каталога по SSH
+$ scp -r catalog_name user@172.18.0.1:~/WORK/
+# Копирование с удаленного компьютера на мой
+$ scp user@172.18.0.1:~/WORK/file_name ~/WORK/
 ```
 Создание iso-образа с диска:
 ```bash
