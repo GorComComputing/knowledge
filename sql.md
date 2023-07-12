@@ -117,7 +117,7 @@ SELECT columns
   FROM table
   WHERE test_column IS [NOT] NULL;
 
--- Создание произвольного столбца равного 5
+-- Создание производного столбца равного 5
 SELECT 2 + 3;
 
 SELECT au_id, 2 + 3
@@ -160,6 +160,35 @@ SELECT au_fname, CHARACTER_LENGTH(au_fname) AS "Len"
 -- Поиск в строке и вывод номера позиции в строке
 SELECT au_fname, POSITION('e' IN au_fname) AS "Pos e", au_lname, POSITION('ma' IN au_lname) AS "Pos ma"
   FROM authors;
+
+-- Извлечение текущей даты и времени
+SELECT
+  CURRENT_DATE AS "Date",
+  CURRENT_TIME AS "Time",
+  CURRENT_TIMESTAMP AS "Timestamp";
+
+-- Отображение информации о пользователе
+SELECT CURRENT_USER AS "User";
+
+-- Вычисление условных значений (CASE)
+SELECT title_id, type, price,
+  CASE type
+    WHEN 'history'
+      THEN price * 1.10
+    WHEN 'psychology'
+      THEN price * 1.20
+    ELSE price
+  END
+  AS "New price"
+  FROM titles
+  ORDER BY type ASC, title_id ASC;
+
+-- Поиск минимального значения
+SELECT MIN(price) AS "Min price"
+  FROM titles;
+
+
+
 
 -- Вставка строк
 INSERT INTO table
