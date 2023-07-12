@@ -25,6 +25,7 @@
 - [Go](https://github.com/GorComComputing/knowledge/blob/main/go.md)
 - [Free Pascal](https://github.com/GorComComputing/knowledge/tree/main/pascal)
 #### Базы данных
+- [SQL](https://github.com/GorComComputing/knowledge/blob/main/sql.md)
 - [PostgreSQL](https://github.com/GorComComputing/knowledge/blob/main/postgresql.md)
 #### Web-frontend
 - [HTML](https://github.com/GorComComputing/knowledge/blob/main/html.md)
