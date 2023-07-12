@@ -53,6 +53,7 @@ postgres=# DELETE FROM objects WHERE id = 4;
 # Выгрузка базы в файл
 $ pg_dump -U username -f backup.dump database_name -Fc
 # Восстановленеи базы из файла
+$ sudo cp tst_db.backup /var/lib/postgresql/      # перенести файл tst_db.backup в папку пользователя postgres
 $ pg_restore -U username -d dbname -1 filename.dump
 
 # Изменение пароля пользователя
@@ -83,4 +84,27 @@ $ /etc/init.d/postgresql start
 $ createdb db_name
 $ psql -d template1 -U postgres
 template1=# \q
+```
+Полезные команды PostgreSQL:
+```
+# Зазмер файлов хранилища текущей базы
+postgres=# SELECT pg_database_size(current_database());
+
+# Имя текущей базы
+postgres=# SELECT current_database();
+
+# Информация в человекочитаемом виде
+postgres=# SELECT pg_size_pretty(pg_database_size(current_database()));
+
+# Список всех таблиц базы
+postgres=# SELECT table_name FROM information_schema.tables WHERE table_schema NOT IN ('information_schema','pg_catalog');
+
+# Размер таблицы
+postgres=# SELECT pg_relation_size('table_name');
+
+# Перечень подключенных пользователей
+postgres=# SELECT datname,usename,client_addr,client_port FROM pg_stat_activity;
+
+# Узнать активность пользователя
+postgres=# SELECT datname FROM pg_stat_activity WHERE usename = 'postgres';
 ```
