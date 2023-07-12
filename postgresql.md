@@ -24,15 +24,15 @@ postgres=# \q
 $ createuser --interactive
 
 # Создание базы данных
-$ createdb alex
+$ createdb tst_db
 
 # Для подключения к базе нужно зайти в пользователя
-$ sudo su - alex
+$ sudo su - postgres
 
 # Запуск PostgreSQL
 $ psql
 # Можно выбрать другую базу при запуске
-$ psql -d postgres
+$ psql -d tst_db
 
 # Создание таблицы
 postgres=# CREATE TABLE имя_таблицы (имя_колонки1 тип_колонки (длина) ограничения, имя_колонки2 тип_колонки (длина), имя_колонки3 тип_колонки (длина));
