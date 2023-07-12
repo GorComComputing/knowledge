@@ -23,6 +23,7 @@
 - [Linux iMX6ULL-NANO-2E](https://github.com/GorComComputing/knowledge/blob/main/linux_imx6ull_nano_2e.md)
 #### Программирование
 - [Go](https://github.com/GorComComputing/knowledge/blob/main/go.md)
+- [C](https://github.com/GorComComputing/knowledge/blob/main/c.md)
 - [Free Pascal](https://github.com/GorComComputing/knowledge/tree/main/pascal)
 #### Базы данных
 - [SQL](https://github.com/GorComComputing/knowledge/blob/main/sql.md)
