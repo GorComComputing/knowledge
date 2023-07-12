@@ -188,12 +188,24 @@ SELECT MIN(price) AS "Min price"
   FROM titles;
 
 -- Поиск максимального значения
-SELECT MAX(price) AS "Min price"
+SELECT MAX(price) AS "Max price"
   FROM titles;
 
+-- Вычисление суммы
+SELECT SUM(advance) AS "Total advances"
+  FROM royalties;
 
+-- Вычисление среднего
+SELECT AVG(advance) AS "Average advances"
+  FROM royalties;
 
+-- Подсчет строк
+SELECT COUNT(advance) AS "Count advances"
+  FROM royalties;
 
+-- Подсчет строк без повторений
+SELECT COUNT(DISTINCT advance) AS "Count advances"
+  FROM royalties;
 
 
 -- Вставка строк
