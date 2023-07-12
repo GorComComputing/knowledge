@@ -196,6 +196,9 @@ $ ssh  root@192.168.0.254
 Host 192.168.0.254
     HostkeyAlgorithms ssh-dss,ssh-rsa
     KexAlgorithms +diffie-hellman-group1-sha1
+
+# Копирование файла по SSH
+$ scp ./WebServer user@172.18.0.1:~/WORK/
 ```
 Создание iso-образа с диска:
 ```bash
