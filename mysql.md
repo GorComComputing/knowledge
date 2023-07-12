@@ -25,6 +25,11 @@ mysql> show databases;
 # Создать базу
 mysql> CREATE DATABASE my_tst;
 
+# Создание пользователя
+mysql> CREATE USER 'user'@'%' IDENTIFIED BY 'password';
+# Выдать пользователю полные права на базу 
+mysql> GRANT ALL PRIVILEGES ON my_tst.* TO 'user'@'%' WITH GRANT OPTION;
+
 # Выбрать базу 
 mysql> use my_tst;
 
