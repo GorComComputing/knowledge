@@ -28,6 +28,7 @@
 #### Базы данных
 - [SQL](https://github.com/GorComComputing/knowledge/blob/main/sql.md)
 - [PostgreSQL](https://github.com/GorComComputing/knowledge/blob/main/postgresql.md)
+- [MySQL](https://github.com/GorComComputing/knowledge/blob/main/mysql.md)
 #### Web-frontend
 - [HTML](https://github.com/GorComComputing/knowledge/blob/main/html.md)
 - [Chrome](https://github.com/GorComComputing/knowledge/blob/main/chrome.md)
