@@ -60,7 +60,7 @@ SELECT au_fname, au_lname, city, state
 -- Результат выражения в столбце price * sales AS "Revenue"
 SELECT title_id, price, sales, price * sales AS "Revenue"
   FROM titles
-  ORDER BY "Revenue" DESC;
+  ORDER BY Revenue DESC;
 
 -- Условие (WHERE)
 SELECT columns
