@@ -267,19 +267,64 @@ CREATE TABLE publishers
   country VARCHAR(15) NOT NULL
   );
 
+-- Присвоение уникального значения (UNIQUE)
+CREATE TABLE titles
+  (
+  title_id CHAR(3) PRIMARY KEY,
+  title_name VARCHAR(40) NOT NULL UNIQUE,
+  type VARCHAR(10) NULL,
+  pub_id CHAR(3) NOT NULL,
+  pages INTEGER NULL,
+  price DECIMAL(5,2) NULL,
+  sales INTEGER NULL,
+  pubdate DATE NULL,
+  contract SMALLINT NOT NULL
+  );
 
+-- Создание локальной временной таблицы (удаляется, когда завершается сессия) - доступна только для этого пользователя
+CREATE LOCAL TEMPORARY TABLE editors
+  (
+  ed_id CHAR(3),
+  ed_fname VARCHAR(15),
+  ed_lname VARCHAR(15),
+  phone VARCHAR(12),
+  pub_id CHAR(3)
+  );
 
+-- Создание глобальной временной таблицы (удаляется, когда завершается сессия) - доступна для всех пользователей
+CREATE GLOBAL TEMPORARY TABLE editors
+  (
+  ed_id CHAR(3),
+  ed_fname VARCHAR(15),
+  ed_lname VARCHAR(15),
+  phone VARCHAR(12),
+  pub_id CHAR(3)
+  );
 
+-- Создание таблицы на основе существующей
+SELECT columns
+  INTO new_table
+  FROM existing table
+  [WHERE search_condition];
 
+SELECT *
+  INTO publishers2
+  FROM publishers
+  WHERE 1 = 2;
 
+SELECT title_name, sales
+  INTO GLOBAL TEMPORARY TABLE titles2
+  FROM titles
+  WHERE pub_id = 'P01';
 
+-- Изменение таблицы (добавление столбца)
+ALTER TABLE authors
+  ADD email_address CHAR(25);
 
+-- Изменение таблицы (удаление столбца)
+ALTER TABLE authors
+  DROP COLUMN email_address;
 
-
-
-
-
-
-
-
+-- Удаление таблицы
+DROP TABLE royalties;
 ```
