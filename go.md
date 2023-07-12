@@ -23,6 +23,8 @@ $ go get github.com/lib/pq
 
 # Узнать версию glibc установленную на компьютере
 $ ldd --version
+# Собрать без использования C-кода, только код Go
+$ CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o WebServer .
 
 ```
 Тестовая программа на Go (Hello World):
