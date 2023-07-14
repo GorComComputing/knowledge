@@ -59,6 +59,9 @@ $ pg_dump -U username -f backup.dump database_name -Fc
 # Восстановленеи базы из файла
 $ sudo cp tst_db.backup /var/lib/postgresql/      # перенести файл tst_db.backup в папку пользователя postgres
 $ pg_restore -U username -d dbname -1 filename.dump
+
+# Выход из пользователя postgres
+$ exit
 ```
 Установка PostgreSQL на OpenWrt
 ```bash
