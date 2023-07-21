@@ -16,7 +16,7 @@
 - [Подборка проектов на разных языках 2](https://github.com/codecrafters-io/build-your-own-x)
 - [Пишем базу данных 1](https://habr.com/ru/articles/347274/)
 - [Пишем базу данных 2](https://marianogappa.github.io/software/2019/06/05/lets-build-a-sql-parser-in-go/)
-
+- [React JS](https://ru.legacy.reactjs.org/docs/hello-world.html)
 
 
 
