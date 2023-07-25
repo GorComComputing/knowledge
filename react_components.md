@@ -1,17 +1,17 @@
 #### Мои компоненты React.js
 
-Кнопки
+Кнопки:
 ```
 # Отправка формы
 ButtonSubmit 
-  props.id
-  props.caption
-  props.color
+    props.id
+    props.caption
+    props.color
 
-# Отправка формы
+# Простая кнопка принимает функцию onClick
 ButtonSimple
-  props.id
-  props.caption
-  props.color
-  props.onClick
+    props.id
+    props.caption
+    props.color
+    props.onClick
 ```
