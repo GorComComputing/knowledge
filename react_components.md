@@ -87,3 +87,21 @@ ContainerModal
     props.caption
     props.children
 ```
+Окна:
+```
+PanelDebug
+TableDevice
+Terminal
+
+ModalAuth
+ModalUpdateDevice
+ModalDelDevice
+ModalAddDevice
+```
+
+
+Панели навигации:
+```
+NavBar
+Pagination
+```
