@@ -29,8 +29,10 @@ $ npm install -g create-react-app
 $ create-react-app helloworld
 $ cd helloworld
 
-# Запуск web- сервера и проверка приложения
+# Запуск web-сервера и проверка приложения
 $ npm start        
 
+# Сборка проекта
+$ npm run build
 
 ```         
