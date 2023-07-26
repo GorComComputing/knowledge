@@ -3,32 +3,34 @@
 
 
 ```bash
-# Установка
-$ sudo apt update
-$ sudo apt install nodejs
-$ sudo apt install npm
 
+# Установка
+$ sudo rm -rf /usr/local/bin/npm /usr/local/share/man/man1/node* ~/.npm sudo rm -rf /usr/local/lib/node* sudo rm -rf /usr/local/bin/node* sudo rm -rf /usr/local/include/node*
+$ sudo apt-get purge nodejs npm
+$ sudo apt autoremove
+
+# Скачать последний tar.xz NodeJS файл с https://nodejs.org/en/download/
+$ cd ~/Загрузки
+
+# Где #.#.# это номер скачанной версии
+$ tar -xf node-v#.#.#-linux-x64.tar.xz
+$ sudo mv node-v#.#.#-linux-x64/bin/* /usr/local/bin/
+$ sudo mv node-v#.#.#-linux-x64/lib/node_modules/ /usr/local/lib/
+
+# Закрыть терминал и открыть новый
 # Проверка работоспособности
-$ nodejs -v
+$ node -v
 $ npm -v
 
 # создать проект Create React
 $ npm install -g create-react-app
 
-# Фикс ошибки с версией
-$ npm cache clean -f 
-$ sudo npm install -g n
-$ sudo n latest
-
 # Создать новый проект в выбранном каталоге
 $ create-react-app helloworld
 $ cd helloworld
-$ npm start        # проверка приложения
 
-# Eще фикс ошибки (Cannot find module 'semver')
-$ sudo apt-get remove nodejs
-$ sudo apt-get remove npm
-$ sudo rm -rf ~/.npm
-$ sudo rm -rf /usr/local/lib/node_modules
-$ curl -0 -L https://npmjs.org/install.sh | sudo sh
+# Запуск web- сервера и проверка приложения
+$ npm start        
+
+
 ```         
