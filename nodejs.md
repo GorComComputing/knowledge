@@ -25,5 +25,10 @@ $ create-react-app helloworld
 $ cd helloworld
 $ npm start        # проверка приложения
 
-
+# Eще фикс ошибки (Cannot find module 'semver')
+$ sudo apt-get remove nodejs
+$ sudo apt-get remove npm
+$ sudo rm -rf ~/.npm
+$ sudo rm -rf /usr/local/lib/node_modules
+$ curl -0 -L https://npmjs.org/install.sh | sudo sh
 ```         
