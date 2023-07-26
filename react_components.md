@@ -75,6 +75,11 @@ MsgLine
 ```
 Контейнеры:
 ```
+# Контейнер простой
+ContainerSimple
+    props.id
+    props.children
+
 # Контейнер toggle
 ContainerToggle
     props.id
