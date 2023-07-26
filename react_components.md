@@ -90,6 +90,7 @@ ContainerToggle
 ContainerModal
     props.id
     props.caption
+    props.background_color
     props.children
 ```
 Окна:
