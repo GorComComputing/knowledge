@@ -20,4 +20,10 @@ $ npm cache clean -f
 $ sudo npm install -g n
 $ sudo n latest
 
+# Создать новый проект в выбранном каталоге
+$ create-react-app helloworld
+$ cd helloworld
+$ npm start        # проверка приложения
+
+
 ```         
