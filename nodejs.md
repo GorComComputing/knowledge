@@ -15,4 +15,9 @@ $ npm -v
 # создать проект Create React
 $ npm install -g create-react-app
 
+# Фикс ошибки с версией
+$ npm cache clean -f 
+$ sudo npm install -g n
+$ sudo n latest
+
 ```         
