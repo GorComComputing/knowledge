@@ -25,6 +25,9 @@ $ npm -v
 # создать проект Create React
 $ npm install -g create-react-app
 
+# установить React Router
+$ npm i react-router-dom --save
+
 # Создать новый проект в выбранном каталоге
 $ create-react-app helloworld
 $ cd helloworld
