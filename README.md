@@ -7,6 +7,7 @@
 - [LXC](https://github.com/GorComComputing/knowledge/blob/main/lxc.md)
 - [Установка Linux Ubuntu](https://github.com/GorComComputing/knowledge/blob/main/linux_install.md)
 - [NTP](https://github.com/GorComComputing/knowledge/blob/main/ntp.md)
+- [SNMP](https://github.com/GorComComputing/knowledge/blob/main/snmp.md)
 - [WinSCP](https://github.com/GorComComputing/knowledge/blob/main/winscp.md)
 - [AnyDesk](https://github.com/GorComComputing/knowledge/blob/main/anydesk.md)
 - [Ufw - брандмауэр](https://github.com/GorComComputing/knowledge/blob/main/ufw.md)
