@@ -18,6 +18,8 @@
 - [Пишем базу данных 2](https://marianogappa.github.io/software/2019/06/05/lets-build-a-sql-parser-in-go/)
 - [React JS](https://ru.legacy.reactjs.org/docs/hello-world.html)
 - [Семисегментный индикатор на Javascript](http://brandonlwhite.github.io/sevenSeg.js/)
+- [Настройка snmpd](https://admin-gu.ru/os/linux/ustanovka-i-nastrojka-snmp-snmpd-snmptrapd)
+
 
 
 
