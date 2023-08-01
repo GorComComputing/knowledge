@@ -21,9 +21,10 @@ $ sudo apt-get update
 $ sudo apt-get install snmpd snmp
 $ sudo vi /etc/snmp/snmpd.conf
 
-  rocommunity GokuBlack
-  syslocation Universe10 - IT Room
-  sysContact Zamasu <zamasu@dbsuper.com>;
+  # Настройки по умолчанию
+  agentAddress udp:127.0.0.1:161
+  # Если надо опрашивать host с другого адреса (например с удаленного компа) или порта (нестандартного порта)
+  agentAddress udp:192.168.1.100:162
 
 # Перезапуск snmpd
 $ sudo service snmpd stop
@@ -31,14 +32,12 @@ $ sudo service snmpd start
 $ sudo service snmpd status
 
 # Проверка конфигурации SNMP
-$ sudo snmpwalk -v2c -c GokuBlack 127.0.0.1
-
-
-
-# Захват пакетов
-$ snmpget -On -v2c -c public 203.50.251.17 1.3.6.1.2.1.1.7.0 1.3.6.1.2.1.2.2.1.2.6 1.3.6.1.2.1.2.2.1.5.3
+$ sudo snmpwalk -v 2c -c public localhost
 
 # Пройтись по ветке .1
-$ snmpwalk -v 2c -c public 192.168.0.254 .1
+$ snmpwalk -v 2c -c public localhost .1
+
+# Захват пакетов
+$ snmpget -On -v2c -c public localhost 1.3.6.1.2.1.1.7.0 1.3.6.1.2.1.2.2.1.2.6 1.3.6.1.2.1.2.2.1.5.3
 
 ```
