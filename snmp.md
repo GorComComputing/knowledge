@@ -17,7 +17,23 @@ INFORM, GETBULK — есть только во второй и третьей в
 
 ```bash
 # Установка snmp
-$ sudo apt install snmp
+$ sudo apt-get update
+$ sudo apt-get install snmpd snmp
+$ sudo vi /etc/snmp/snmpd.conf
+
+  rocommunity GokuBlack
+  syslocation Universe10 - IT Room
+  sysContact Zamasu <zamasu@dbsuper.com>;
+
+# Перезапуск snmpd
+$ sudo service snmpd stop
+$ sudo service snmpd start
+$ sudo service snmpd status
+
+# Проверка конфигурации SNMP
+$ sudo snmpwalk -v2c -c GokuBlack 127.0.0.1
+
+
 
 # Захват пакетов
 $ snmpget -On -v2c -c public 203.50.251.17 1.3.6.1.2.1.1.7.0 1.3.6.1.2.1.2.2.1.2.6 1.3.6.1.2.1.2.2.1.5.3
