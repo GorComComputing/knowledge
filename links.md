@@ -19,6 +19,8 @@
 - [React JS](https://ru.legacy.reactjs.org/docs/hello-world.html)
 - [Семисегментный индикатор на Javascript](http://brandonlwhite.github.io/sevenSeg.js/)
 - [Настройка snmpd](https://admin-gu.ru/os/linux/ustanovka-i-nastrojka-snmp-snmpd-snmptrapd)
+- [Wasm + Go](https://dev-gang.ru/article/osnovy-wasm-in-golangeto-fantastika-hqh8jvdddr/)
+
 
 
 
