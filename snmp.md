@@ -19,17 +19,28 @@ INFORM, GETBULK — есть только во второй и третьей в
 # Установка snmp
 $ sudo apt-get update
 $ sudo apt-get install snmpd snmp
-$ sudo vi /etc/snmp/snmpd.conf
 
-  # Настройки по умолчанию
-  agentAddress udp:127.0.0.1:161
-  # Если надо опрашивать host с другого адреса (например с удаленного компа) или порта (нестандартного порта)
-  agentAddress udp:192.168.1.100:162
+# Конфигурация меджера
+$ sudo nano /etc/snmp/snmp.conf
+      # Закоментировать одну строку
+      #mibs :
+
+# Конфигурация агента
+$ sudo vi /etc/snmp/snmpd.conf
+    # Настройки по умолчанию
+    agentAddress udp:127.0.0.1:161
+    # Если надо опрашивать host с другого адреса (например с удаленного компа) или порта (нестандартного порта)
+    agentAddress udp:192.168.1.100:162
 
 # Перезапуск snmpd
 $ sudo service snmpd stop
 $ sudo service snmpd start
 $ sudo service snmpd status
+
+# Перезапуск агента
+$ sudo systemctl restart snmpd
+# ...или так
+$ sudo service snmpd restart
 
 # Проверка конфигурации SNMP
 $ sudo snmpwalk -v 2c -c public localhost
