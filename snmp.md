@@ -19,6 +19,7 @@ INFORM, GETBULK — есть только во второй и третьей в
 # Установка snmp
 $ sudo apt-get update
 $ sudo apt-get install snmpd snmp
+$ sudo apt-get install snmptrapd
 
 # Конфигурация меджера
 $ sudo nano /etc/snmp/snmp.conf
