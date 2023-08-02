@@ -52,3 +52,25 @@ main: *.go deps
 deps:
 	go get github.com/gorilla/sessions
 ```
+
+TinyGo
+```bash
+# Чтобы установить TinyGo, на компьютере уже должен быть установлен Go
+
+# Установка для Linux на процессоре Intel
+$ wget https://github.com/tinygo-org/tinygo/releases/download/v0.28.1/tinygo_0.28.1_amd64.deb
+$ sudo dpkg -i tinygo_0.28.1_amd64.deb
+
+# Установка для Linux на процессоре ARM
+$ wget https://github.com/tinygo-org/tinygo/releases/download/v0.28.1/tinygo_0.28.1_armhf.deb
+$ sudo dpkg -i tinygo_0.28.1_armhf.deb
+
+# Нужно убедиться, что путь к tinygo исполняемому файлу находится в PATH переменной
+$ export PATH=$PATH:/usr/local/bin
+
+# Если вы используете 64-разрядную ОС ARM, и запуск tinygo завершается с ошибкой «нет такого файла или каталога», может потребоваться установить 32-разрядную библиотеку времени выполнения C++
+$ sudo apt install libstdc++6:armhf
+
+# Если интересует только компиляция кода TinyGo для WebAssembly, то установка завершена
+# В противном случае продолжи установку дополнительных требований для желаемого микроконтроллера
+```
