@@ -74,3 +74,80 @@ $ sudo apt install libstdc++6:armhf
 # Если интересует только компиляция кода TinyGo для WebAssembly, то установка завершена
 # В противном случае продолжи установку дополнительных требований для желаемого микроконтроллера
 ```
+
+Wasm
+```bash
+# Компиляция на обычном Go (файл занимает 2 Мб)
+$ cp "$(go env GOROOT)/misc/wasm/wasm_exec.js" .
+$ GOOS=js GOARCH=wasm go build -o main.wasm
+
+# Компиляция на TinyGo (файл занимает 400 Кб)
+$ wget https://raw.githubusercontent.com/tinygo-org/tinygo/v0.19.0/targets/wasm_exec.js
+$ tinygo build -o main.wasm -target wasm .
+```
+
+Запуск Wasm
+```html
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <script src="wasm_exec.js"></script>
+
+    </head>
+    <body>
+        <h1>WASM Experiments</h1>
+        <script>
+            // This is a polyfill for FireFox and Safari
+            if (!WebAssembly.instantiateStreaming) { 
+                WebAssembly.instantiateStreaming = async (resp, importObject) => {
+                    const source = await (await resp).arrayBuffer()
+                    return await WebAssembly.instantiate(source, importObject)
+                }
+            }
+
+            // Promise to load the wasm file
+           function loadWasm(path) {
+             const go = new Go()
+
+             return new Promise((resolve, reject) => {
+               WebAssembly.instantiateStreaming(fetch(path), go.importObject)
+               .then(result => {
+                 go.run(result.instance)
+                 resolve(result.instance)
+               })
+               .catch(error => {
+                 reject(error)
+               })
+             })
+           }
+
+         // Load the wasm file
+         loadWasm("main.wasm").then(wasm => {
+             console.log("main.wasm is loaded 👋")
+         }).catch(error => {
+             console.log("ouch", error)
+         }) 
+
+        </script>
+    </body>
+</html>
+```
+Пример кода на Go для Wasm (используя библиотеку syscall/js)
+```go
+package main
+
+import (
+    "syscall/js"
+)
+
+func main() {
+	message := "👋 Hello World 🌍"
+
+	document := js.Global().Get("document")
+    	h2 := document.Call("createElement", "h2")
+    	h2.Set("innerHTML", message)
+    	document.Get("body").Call("appendChild", h2)
+
+    	<-make(chan bool)
+}
+```
