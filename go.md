@@ -156,3 +156,11 @@ func main() {
     	<-make(chan bool)
 }
 ```
+чистый Wasm:
+```bash
+# Установка транслятора Wasm
+$ sudo apt install wabt
+
+# Трансляция из WAT в бинарник WASM 
+$ wat2wasm sprite.wat -o sprite.wasm
+```
