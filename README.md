@@ -31,6 +31,7 @@
 - [PostgreSQL](https://github.com/GorComComputing/knowledge/blob/main/postgresql.md)
 - [MySQL](https://github.com/GorComComputing/knowledge/blob/main/mysql.md)
 #### Web-frontend
+- [Browser](https://github.com/GorComComputing/knowledge/blob/main/browser.md)
 - [HTML](https://github.com/GorComComputing/knowledge/blob/main/html.md)
 - [JSON](https://github.com/GorComComputing/knowledge/blob/main/json.md)
 - [React Components](https://github.com/GorComComputing/knowledge/blob/main/react_components.md)
