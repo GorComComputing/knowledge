@@ -36,4 +36,6 @@ Connection: close
 </html>
 Connection closed by foreign host.
 
+# Запуск веб-сервера Python (отображает все файлы в каталоге, в котором запущен)
+$ python3 -m http.server 8000
 ```
