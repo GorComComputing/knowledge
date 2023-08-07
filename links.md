@@ -22,6 +22,8 @@
 - [Wasm + Go 1](https://dev-gang.ru/article/osnovy-wasm-in-golangeto-fantastika-hqh8jvdddr/)
 - [Wasm + Go 2](https://habr.com/ru/companies/otus/articles/666004/)
 - [Wasm + ImageData](https://wasmbook.com/blog/WATSprite/)
+- [Первая веб-страница (20 декабря 1990)](http://info.cern.ch/hypertext/WWW/TheProject.html)
+
 
 
 
