@@ -38,4 +38,12 @@ Connection closed by foreign host.
 
 # Запуск веб-сервера Python (отображает все файлы в каталоге, в котором запущен)
 $ python3 -m http.server 8000
+
+# Установка Duktape для Python
+$ sudo apt install python3-pip
+$ pip3 install dukpy
+
+        # Проверка работы Duktape в Python
+        import dukpy
+        print(dukpy.evaljs("2 + 2"))
 ```
