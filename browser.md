@@ -5,7 +5,7 @@
 # Установка соединения
 $ telnet example.org 80
 
-# Запрос на сервер (!не забыть вставить пустую строку в конце!)
+# Запрос GET на сервер (!не забыть вставить пустую строку в конце!)
 GET /index.html HTTP/1.0
 Host: example.org
 
@@ -35,6 +35,14 @@ Connection: close
 </body>
 </html>
 Connection closed by foreign host.
+
+# Запрос POST на сервер 
+POST /submit HTTP/1.0
+Host: example.org
+Content-Length: 16
+
+name=1&comment=2
+
 
 # Запуск веб-сервера Python (отображает все файлы в каталоге, в котором запущен)
 $ python3 -m http.server 8000
