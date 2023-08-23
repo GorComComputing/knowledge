@@ -1,7 +1,9 @@
-#### colorgrab
+#### gpick
+
 
 ```bash
 # Альтернанитва Colormania для Ubuntu (программа для определения цвета)
 # Установка
-$ sudo snap install colorgrab
+$ sudo apt update
+$ sudo apt install gpick
 ```
