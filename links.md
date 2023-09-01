@@ -24,6 +24,7 @@
 - [Wasm + ImageData](https://wasmbook.com/blog/WATSprite/)
 - [Первая веб-страница (20 декабря 1990)](http://info.cern.ch/hypertext/WWW/TheProject.html)
 - [Пишем свой браузер](https://browser.engineering/)
+- [Base64](https://zetcode.com/golang/base64/)
 
 
 
