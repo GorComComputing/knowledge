@@ -54,6 +54,9 @@ $ clang --target=wasm32 -nostdlib -Wl,--no-entry -Wl,--export-all -o add.wasm ad
 # Преобразует wasm файл в wat
 $ wasm2wat add.wasm
 
+# Преобразует wasm файл в wat
+$ wat2wasm add.wat
+
 # Применяем оптимизацию
 $ clang \
    --target=wasm32 \
