@@ -91,4 +91,13 @@ Emscripten
 # Установка Emscripten
 $ sudo apt install emscripten
 
+# Компиляция с созданием .html, .js, .wasm
+$ emcc *.c -o index.html
+
+# Компиляция с созданием .js, .wasm
+$ emcc *.c -o index.js
+
+# Компиляция только стороннего модуля .wasm
+$ emcc *.c -s SIDE_MODULE=2 -O1 -s EXPORTED_FUNCTIONS=['_Increment'] -o index.wasm
+
 ```
