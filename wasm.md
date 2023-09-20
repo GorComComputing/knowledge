@@ -104,3 +104,9 @@ $ emcc *.c -o index.js
 $ emcc *.c -s SIDE_MODULE=2 -O1 -s EXPORTED_FUNCTIONS=['_Increment'] -o index.wasm
 
 ```
+
+```
+# Определить размер памяти WASM в консоли браузера
+# по умолчанию 16 Мб кучи и стек до 5 Мб
+Module.HEAP8
+```
