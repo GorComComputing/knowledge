@@ -28,6 +28,7 @@
 - [Base64 2](https://freshman.tech/snippets/go/image-to-base64/)
 - [Пишем свой текстовый редактор](https://viewsourcecode.org/snaptoken/kilo/)
 - [Браузеры, поддерживающие Wasm](https://caniuse.com/?search=webassembly)
+- [C/C++ Wasm](https://marcoselvatici.github.io/WASM_tutorial/)
 
 
 
