@@ -28,5 +28,9 @@ $ cargo new hello_cargo
 
 # Сборка проекта с Cargo
 $ cargo build
+$ ./target/debug/hello_cargo
+
+# Сборка и запуск одной командой
+$ cargo run
 
 ```
