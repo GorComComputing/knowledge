@@ -23,4 +23,7 @@ $ rustup self uninstall
 $ rustc main.rs
 $ ./main
 
+# Создание проекта с Cargo
+$ cargo new hello_cargo
+
 ```
