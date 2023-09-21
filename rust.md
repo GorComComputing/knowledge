@@ -33,4 +33,9 @@ $ ./target/debug/hello_cargo
 # Сборка и запуск одной командой
 $ cargo run
 
+# Проверяет код на ошибки без компиляции
+$ cargo check
+
+# Сборка релиза (с оптимизацией)
+$ cargo build --release
 ```
