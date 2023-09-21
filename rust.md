@@ -11,6 +11,7 @@ $ sudo apt-get install curl
 
 # Проверка установки
 $ rustc --version
+$ cargo --version
 
 # Обновление компилятора Rust
 $ rustup update
