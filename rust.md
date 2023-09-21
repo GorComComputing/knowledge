@@ -26,4 +26,7 @@ $ ./main
 # Создание проекта с Cargo
 $ cargo new hello_cargo
 
+# Сборка проекта с Cargo
+$ cargo build
+
 ```
