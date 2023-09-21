@@ -17,4 +17,9 @@ $ rustup update
 
 # Удаление компилятора Rust
 $ rustup self uninstall
+
+# Компиляция
+$ rustc main.rs
+$ ./main
+
 ```
