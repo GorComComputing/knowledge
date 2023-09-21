@@ -24,6 +24,7 @@
 - [Linux i386](https://github.com/GorComComputing/knowledge/blob/main/linux_i386.md)
 - [Linux iMX6ULL-NANO-2E](https://github.com/GorComComputing/knowledge/blob/main/linux_imx6ull_nano_2e.md)
 #### Программирование
+- [Rust](https://github.com/GorComComputing/knowledge/blob/main/rust.md)
 - [Go](https://github.com/GorComComputing/knowledge/blob/main/go.md)
 - [C](https://github.com/GorComComputing/knowledge/blob/main/c.md)
 - [Free Pascal](https://github.com/GorComComputing/knowledge/tree/main/pascal)
