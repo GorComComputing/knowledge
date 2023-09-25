@@ -29,7 +29,7 @@
 - [Пишем свой текстовый редактор](https://viewsourcecode.org/snaptoken/kilo/)
 - [Браузеры, поддерживающие Wasm](https://caniuse.com/?search=webassembly)
 - [C/C++ Wasm](https://marcoselvatici.github.io/WASM_tutorial/)
-
+- [Справка Emscripten](https://emscripten.org/docs/porting/connecting_cpp_and_javascript/Interacting-with-code.html)
 
 
 
