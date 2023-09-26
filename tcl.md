@@ -13,3 +13,20 @@ $ chmod +x hello.tcl
 # hello.tcl
 puts "Hello, world"
 ```
+Команды Tcl:
+```tcl
+# Печатает строку
+% puts "Hello, world"
+
+# Вычисляет выражение
+% expr 3+2
+
+# Выполняет команду bash
+% exec ls
+
+# Перейти в каталог
+% cd ..
+
+# [] передать в качестве параметра
+% puts [exec ls]
+```
