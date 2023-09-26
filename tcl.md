@@ -7,7 +7,7 @@ $ which tclsh
 ```
 
 ```tcl
-#!/user/bin/tclsh
+#!/usr/bin/tclsh
 # hello.tcl
 puts "Hello, world"
 ```
