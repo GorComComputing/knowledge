@@ -110,3 +110,14 @@ $ emcc *.c -s SIDE_MODULE=2 -O1 -s EXPORTED_FUNCTIONS=['_Increment'] -o index.wa
 # по умолчанию 16 Мб кучи и стек до 5 Мб
 Module.HEAP8
 ```
+Node.js
+```bash
+# Установка Node.js
+$ sudo apt install nodejs
+
+# Проверка установки
+$ node -v
+
+# Запуск
+$ node AddInt.js 7 9
+```
