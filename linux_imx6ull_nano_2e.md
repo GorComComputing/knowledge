@@ -233,3 +233,24 @@ $ make -j4
 # После сборки скомпилированные бинарные файлы новго пакета будут лежать в корневой файловой системе Linux в каталоге /usr/bin/
 ```
 
+Управление GPIO
+```bash
+# Формула определение номера пина GPIO в Linux
+# linux gpio number = (gpio_bank – 1) * 32 + gpio_bit
+
+# Включить 1 на пине 2
+$ echo 2 > /sys/class/gpio/export
+$ echo out > /sys/class/gpio/gpio2/direction 	# задает направление in\out 
+$ echo 1 > /sys/class/gpio/gpio2/value
+
+# Прочитать pin 9
+$ cd /sys/class/gpio/
+$ echo 9 > export
+$ cat gpio9/value
+```
+Добавить скрипт в автозагрузку Linux
+```bash
+# Создать фал скрипта в директории /etc/init.d/ (touch)
+# Задать скрипту права на выполнение (chmod +x)
+# Добавить ссылку на скрипт в директорию /etc/rc.d (ln -s)
+```
