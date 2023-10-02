@@ -238,15 +238,15 @@ $ make -j4
 # Формула определение номера пина GPIO в Linux
 # linux gpio number = (gpio_bank – 1) * 32 + gpio_bit
 
-# Включить 1 на пине 2
-$ echo 2 > /sys/class/gpio/export
-$ echo out > /sys/class/gpio/gpio2/direction 	# задает направление in\out 
-$ echo 1 > /sys/class/gpio/gpio2/value
+# Включить 1 на пине 51
+$ echo 51 > /sys/class/gpio/export
+$ echo out > /sys/class/gpio/gpio51/direction 	# задает направление in\out 
+$ echo 1 > /sys/class/gpio/gpio51/value
 
-# Прочитать pin 9
+# Прочитать pin 51
 $ cd /sys/class/gpio/
-$ echo 9 > export
-$ cat gpio9/value
+$ echo 51 > export
+$ cat /sys/class/gpio/gpio51/value
 ```
 Добавить скрипт в автозагрузку Linux
 ```bash
