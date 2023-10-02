@@ -32,6 +32,7 @@
 - [Справка Emscripten](https://emscripten.org/docs/porting/connecting_cpp_and_javascript/Interacting-with-code.html)
 - [Отладка WASM C++](https://developer.chrome.com/docs/devtools/wasm/)
 - [Низкоуровневое устройство WASM](https://rsms.me/wasm-intro)
+- [JavaScript](https://github.com/airbnb/javascript)
 
 
 
