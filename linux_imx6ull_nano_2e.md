@@ -244,8 +244,7 @@ $ echo out > /sys/class/gpio/gpio51/direction 	# задает направлен
 $ echo 1 > /sys/class/gpio/gpio51/value
 
 # Прочитать pin 51
-$ cd /sys/class/gpio/
-$ echo 51 > export
+$ echo 51 > /sys/class/gpio/export
 $ cat /sys/class/gpio/gpio51/value
 ```
 Добавить скрипт в автозагрузку Linux
