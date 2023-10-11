@@ -29,6 +29,7 @@
 - [Go](https://github.com/GorComComputing/knowledge/blob/main/go.md)
 - [C](https://github.com/GorComComputing/knowledge/blob/main/c.md)
 - [Free Pascal](https://github.com/GorComComputing/knowledge/tree/main/pascal)
+- [Java](https://github.com/GorComComputing/knowledge/blob/main/java.md)
 #### Базы данных
 - [SQL](https://github.com/GorComComputing/knowledge/blob/main/sql.md)
 - [PostgreSQL](https://github.com/GorComComputing/knowledge/blob/main/postgresql.md)
