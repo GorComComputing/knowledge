@@ -33,7 +33,7 @@
 - [Отладка WASM C++](https://developer.chrome.com/docs/devtools/wasm/)
 - [Низкоуровневое устройство WASM](https://rsms.me/wasm-intro)
 - [JavaScript](https://github.com/airbnb/javascript)
-
+- [NAND to Tetris](https://www.nand2tetris.org/)
 
 
 
