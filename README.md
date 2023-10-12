@@ -24,6 +24,7 @@
 - [Linux All](https://github.com/GorComComputing/knowledge/blob/main/linux_all.md)
 - [Linux i386](https://github.com/GorComComputing/knowledge/blob/main/linux_i386.md)
 - [Linux iMX6ULL-NANO-2E](https://github.com/GorComComputing/knowledge/blob/main/linux_imx6ull_nano_2e.md)
+- [gpsd](https://github.com/GorComComputing/knowledge/blob/main/gpsd.md)
 #### Программирование
 - [Rust](https://github.com/GorComComputing/knowledge/blob/main/rust.md)
 - [Go](https://github.com/GorComComputing/knowledge/blob/main/go.md)
