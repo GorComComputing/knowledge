@@ -1,22 +1,21 @@
 #### Go
 
 ```bash
-# Установка (лучший вариант)
+# Установка компилятора Go (лучший способ)
 # Удалить все предыдущие установки Go
 $ sudo rm -rf /usr/local/go
 # Затем извлечь загруженный архив (https://go.dev/doc/install)
 $ sudo tar -C /usr/local -xzf go1.21.3.linux-amd64.tar.gz
 $ export PATH=$PATH:/usr/local/go/bin
-# Проверка установки
-$ go version
-```
-```bash
-# Установка
+$ go env -w GO111MODULE=off
+
+# Установка компилятора Go (второй способ)
 $ sudo apt update
 $ sudo apt upgrade
 $ sudo apt install golang git
 $ go env -w GO111MODULE=off
-# Проверка работы
+
+# Проверка работы Go (по умолчанию Go находится в каталоге /bin/)
 $ go version
 
 # Запуск без создания файла
