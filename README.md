@@ -45,6 +45,8 @@
 - [Wasm](https://github.com/GorComComputing/knowledge/blob/main/wasm.md)
 #### Контроль версий
 - [Git](https://github.com/GorComComputing/knowledge/blob/main/git.md)
+#### Финансы
+- [MQL](https://github.com/GorComComputing/knowledge/blob/main/finance.md)
 #### Другие ссылки
 - [Ссылки](https://github.com/GorComComputing/knowledge/blob/main/links.md)
 
