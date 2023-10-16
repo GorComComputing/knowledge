@@ -12,4 +12,5 @@
 ```
 MQL5
 Python Binance
+Прямой доступ (Direct Market Access, DMA)
 ```
