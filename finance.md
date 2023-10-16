@@ -14,4 +14,5 @@ MQL5
 Python Binance
 Прямой доступ (Direct Market Access, DMA)
 HFT (High Frequency Trading)
+соединение с брокерским API (SmartCOM)
 ```
