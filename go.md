@@ -1,6 +1,15 @@
 #### Go
 
-
+```bash
+# Установка (лучший вариант)
+# Удалить все предыдущие установки Go
+$ sudo rm -rf /usr/local/go
+# Затем извлечь загруженный архив (https://go.dev/doc/install)
+$ sudo tar -C /usr/local -xzf go1.21.3.linux-amd64.tar.gz
+$ export PATH=$PATH:/usr/local/go/bin
+# Проверка установки
+$ go version
+```
 ```bash
 # Установка
 $ sudo apt update
