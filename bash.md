@@ -162,6 +162,10 @@ $ newgrp groupname        # создать группу
 $ sudo apt install net-tools
 $ sudo netstat -tulpn
 
+# Архивирование файлов
+$ tar -cvf archive.tar /path/to/files
+# Разархивирование файлов
+$ tar -xvf archive.tar.gz
 ```
 Чтобы освободить место в коневой файловой системе
 ```bash
