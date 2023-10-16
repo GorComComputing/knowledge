@@ -5,8 +5,8 @@
 - FIX (Financial Information eXchange);
 - FAST (Fix Adapted for STreaming);
 - Plaza II;
-- ASTS Bridge;
-- MICEXBridge (TEAP);
+- ASTS Bridge (TEAP);
+- SBE (Simple Binary Encoding);
 ```
 
 ```
