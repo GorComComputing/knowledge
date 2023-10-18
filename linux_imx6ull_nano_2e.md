@@ -265,6 +265,8 @@ $ cat /sys/class/gpio/gpio51/value
 
 Настройка IP-адреса в Linux
 ```bash
-# 
+# Перед тем как внести изменения, запишите или выведите на печать текущие параметры и интерфейс eth1 или eth2
 $ ifconfig -a
+# Поменяй ethx на имя интерфейса
+$ ifconfig ethx xxx.xxx.xxx.xxx netmask xxx.xxx.xxx.xxx
 ```
