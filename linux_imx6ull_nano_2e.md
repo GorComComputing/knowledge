@@ -262,3 +262,9 @@ $ cat /sys/class/gpio/gpio51/value
 # Задать скрипту права на выполнение (chmod +x)
 # Добавить ссылку на скрипт в директорию /etc/rc.d (ln -s)
 ```
+
+Настройка IP-адреса в Linux
+```bash
+# 
+$ ifconfig -a
+```
