@@ -36,7 +36,7 @@
 - [NAND to Tetris](https://www.nand2tetris.org/)
 - [Торговые роботы](https://habr.com/ru/companies/ruvds/articles/517234/)
 - [Торговый робот на Python](https://habr.com/ru/articles/745878/)
-
+- [Торговый робот на Python-2](https://habr.com/ru/articles/729036/)
 
 
 
