@@ -37,7 +37,7 @@
 - [Торговые роботы](https://habr.com/ru/companies/ruvds/articles/517234/)
 - [Торговый робот на Python](https://habr.com/ru/articles/745878/)
 - [Торговый робот на Python-2](https://habr.com/ru/articles/729036/)
-
+- [Торговый робот на Алор](https://habr.com/ru/articles/731354/)
 
 
 
