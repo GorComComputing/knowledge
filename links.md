@@ -35,7 +35,7 @@
 - [JavaScript](https://github.com/airbnb/javascript)
 - [NAND to Tetris](https://www.nand2tetris.org/)
 - [Торговые роботы](https://habr.com/ru/companies/ruvds/articles/517234/)
-
+- [Торговый робот на Python](https://habr.com/ru/articles/745878/)
 
 
 
