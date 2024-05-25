@@ -21,3 +21,9 @@ $ ls -lh /etc/rc.d | grep <your script>
 # Проверка
 $ /etc/init.d/<your script> enabled && echo on
 ```
+
+Отключить DHCP-сервер:
+```
+# В файле /etc/config/dhcp добавить в lan интерфейс
+option ignore	1
+```
