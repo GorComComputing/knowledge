@@ -27,7 +27,7 @@ $ /etc/init.d/<your script> enabled && echo on
 # В файле /etc/config/dhcp добавить в lan интерфейс
 option ignore	1
 ```
-Добавить сертификаты
+Добавление сертификатов
 ```
 # Скачать CA cacert.pem по ссылке и добавить в один из каталогов:
 # https://curl.se/docs/caextract.html
