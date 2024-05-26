@@ -29,8 +29,9 @@ option ignore	1
 ```
 Добавление сертификатов
 ```
-# Скачать CA cacert.pem по ссылке и добавить в один из каталогов:
+# Скачать CA cacert.pem по ссылке 
 # https://curl.se/docs/caextract.html
+# и добавить в один из каталогов:
 
 /etc/ssl/certs/ca-certificates.crt
 /etc/pki/tls/certs/ca-bundle.crt
