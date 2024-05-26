@@ -40,5 +40,5 @@ option ignore	1
 /etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem
 /etc/ssl/cert.pem
 
-# Для исправления ошибки x509: certificate signed by unknown authority
+# Это нужно для исправления ошибки x509: certificate signed by unknown authority
 ```
