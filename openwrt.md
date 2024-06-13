@@ -42,3 +42,9 @@ option ignore	1
 
 # Это нужно для исправления ошибки x509: certificate signed by unknown authority
 ```
+
+Включить SFTP:
+```
+$ opkg update
+$ opkg install openssh-sftp-server
+```
