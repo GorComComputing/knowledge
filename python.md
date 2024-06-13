@@ -30,4 +30,7 @@ Jupiter Notebook
 $ sudo pip3 install jupyter
 $ jupyter notebook
 $ jupyter notebook password
+
+# Сервер запустится по адресу
+# https://localhost:8888/tree
 ```
