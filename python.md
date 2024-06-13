@@ -25,3 +25,8 @@ IPython
 $ ipython
 In [1]: exit()
 ```
+Jupiter Notebook
+```
+$ pip install jupyter
+$ jupyter notebook
+```
