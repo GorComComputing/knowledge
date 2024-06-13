@@ -27,6 +27,7 @@ In [1]: exit()
 ```
 Jupiter Notebook
 ```
-$ pip install jupyter
+$ sudo pip3 install jupyter
 $ jupyter notebook
+$ jupyter notebook password
 ```
