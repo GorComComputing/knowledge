@@ -48,6 +48,8 @@
 - [Git](https://github.com/GorComComputing/knowledge/blob/main/git.md)
 #### Финансы
 - [MQL](https://github.com/GorComComputing/knowledge/blob/main/finance.md)
+#### Hardware
+- [CUDA](https://github.com/GorComComputing/knowledge/blob/main/cuda.md)
 #### Другие ссылки
 - [Ссылки](https://github.com/GorComComputing/knowledge/blob/main/links.md)
 
