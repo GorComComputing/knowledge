@@ -13,6 +13,7 @@
 - [AnyDesk](https://github.com/GorComComputing/knowledge/blob/main/anydesk.md)
 - [Ufw - брандмауэр](https://github.com/GorComComputing/knowledge/blob/main/ufw.md)
 - [gpick](https://github.com/GorComComputing/knowledge/blob/main/gpick.md)
+- [gpg](https://github.com/GorComComputing/knowledge/blob/main/gpg.md)
 #### Embedded Linux
 - [Crosstool-NG](https://github.com/GorComComputing/knowledge/blob/main/crosstool_ng.md)
 - [U-Boot](https://github.com/GorComComputing/knowledge/blob/main/u_boot.md)
