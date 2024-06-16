@@ -17,3 +17,8 @@ $ sudo apt install --install-recommends winehq-stable
 $ cd ~/Загрузки
 $ wine WinSCP-*-Setup.exe
 ```
+
+```
+# Путь к файлам Wine в Ubuntu
+$ cd ~/.wine
+```
