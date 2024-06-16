@@ -13,6 +13,11 @@ $ gpg --gen-key
 # Список доступных ключей
 $ gpg --list-keys
 
+# Установить уровень доверия ключа
+$ gpg --edit-key "Eugeny Goryachev"
+gpg> trust
+5
+
 # Зашифровать файл с ключом
 gpg -e -r "Eugeny Goryachev" file
 
