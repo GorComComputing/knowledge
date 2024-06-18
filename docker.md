@@ -1,6 +1,6 @@
 #### Docker
 
-Docker
+Установка Docker
 ```
 # Установка
 $ sudo apt update
@@ -24,6 +24,31 @@ $ sudo usermod -aG docker ${user}
 $ su - ${user}
 # Проверим, все ли установлено корректно
 $ docker run hello-world
+```
+Команды Docker
+```
+# Посмотреть список образов в системе
+$ docker images
+
+# Скачивает образ busybox из регистра Докера и сохраняет его локально
+$ docker pull busybox
+
+# Запустим Докер-контейнер с этим образом (--rm - удалять контейнер после завершения)
+$ docker run --rm busybox
+$ docker run busybox echo "hello from busybox"
+# Команда run с флагом -it подключает интерактивный tty в контейнер
+$ docker run -it busybox sh
+
+# Выводит на экран список всех запущенных контейнеров
+$ docker ps
+$ docker ps -a
+
+# Удалить контейнеры
+$ docker rm 305297d7a235 ff0a5c3750b9
+# Удалить ВСЕ завершенные контейнеры
+$ docker rm $(docker ps -a -q -f status=exited)
+
+
 ```
 Docker Compose
 ```
