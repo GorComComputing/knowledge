@@ -45,7 +45,8 @@
 - [Node.js](https://github.com/GorComComputing/knowledge/blob/main/nodejs.md)
 - [Chrome](https://github.com/GorComComputing/knowledge/blob/main/chrome.md)
 - [Wasm](https://github.com/GorComComputing/knowledge/blob/main/wasm.md)
-#### Контроль версий
+#### DevOps
+- [Docker](https://github.com/GorComComputing/knowledge/blob/main/docker.md)
 - [Git](https://github.com/GorComComputing/knowledge/blob/main/git.md)
 #### Финансы
 - [MQL](https://github.com/GorComComputing/knowledge/blob/main/finance.md)
