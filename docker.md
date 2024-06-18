@@ -42,6 +42,9 @@ $ docker run busybox echo "hello from busybox"
 # Команда run с флагом -it подключает интерактивный tty в контейнер
 $ docker run -it --rm busybox sh
 
+# Запустить контейнер в фоновом режиме из регистра Docker Hub
+$ docker run -d -p 8081:8081 --rm gorcomcomputing/doors
+
 # Остановить контейнер
 $ docker stop 3b98ea9641a0
 
@@ -58,6 +61,15 @@ Dockerfile
 ```
 # Собрать образ Docker из Dockerfile
 $ docker build -t doors .
+```
+Docker Hub
+```
+# Логин
+$ docker login -u "user-name" -p "password" docker.io
+
+# Загрузить образ на Docker Hub
+$ docker push gorcomcomputing/doors
+
 ```
 Docker Compose
 ```
