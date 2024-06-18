@@ -1,5 +1,6 @@
 #### Docker
 
+Docker
 ```
 # Установка
 $ sudo apt update
@@ -20,9 +21,11 @@ $ sudo systemctl status docker
 # Для этого введите в терминале команду
 # Где user — имя пользователя
 $ sudo usermod -aG docker ${user}
-
-
-
-
+$ su - ${user}
+# Проверим, все ли установлено корректно
+$ docker run hello-world
+```
+Docker Compose
+```
 
 ```
