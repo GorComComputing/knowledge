@@ -30,6 +30,9 @@ $ docker run hello-world
 # Посмотреть список образов в системе
 $ docker images
 
+# Удалить образ
+$ docker rmi 3b98ea9641a0
+
 # Скачивает образ busybox из регистра Докера и сохраняет его локально
 $ docker pull busybox
 
@@ -37,7 +40,10 @@ $ docker pull busybox
 $ docker run --rm busybox
 $ docker run busybox echo "hello from busybox"
 # Команда run с флагом -it подключает интерактивный tty в контейнер
-$ docker run -it busybox sh
+$ docker run -it --rm busybox sh
+
+# Остановить контейнер
+$ docker stop 3b98ea9641a0
 
 # Выводит на экран список всех запущенных контейнеров
 $ docker ps
@@ -47,8 +53,11 @@ $ docker ps -a
 $ docker rm 305297d7a235 ff0a5c3750b9
 # Удалить ВСЕ завершенные контейнеры
 $ docker rm $(docker ps -a -q -f status=exited)
-
-
+```
+Dockerfile
+```
+# Собрать образ Docker из Dockerfile
+$ docker build -t doors .
 ```
 Docker Compose
 ```
