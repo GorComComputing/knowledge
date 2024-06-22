@@ -56,6 +56,9 @@ $ docker ps -a
 $ docker rm 305297d7a235 ff0a5c3750b9
 # Удалить ВСЕ завершенные контейнеры
 $ docker rm $(docker ps -a -q -f status=exited)
+
+# По имени контейнера
+$(docker container ls  | grep 'container-name' | awk '{print $1}')
 ```
 Dockerfile
 ```
