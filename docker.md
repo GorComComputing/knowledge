@@ -43,7 +43,7 @@ $ docker run busybox echo "hello from busybox"
 $ docker run -it --rm busybox sh
 
 # Запустить контейнер в фоновом режиме из регистра Docker Hub
-$ docker run -d -p 8081:8081 --rm gorcomcomputing/doors
+$ docker run -d -p 80:8081 --rm gorcomcomputing/doors
 
 # Остановить контейнер
 $ docker stop 3b98ea9641a0
