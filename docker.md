@@ -60,7 +60,7 @@ $ docker rm $(docker ps -a -q -f status=exited)
 Dockerfile
 ```
 # Собрать образ Docker из Dockerfile
-$ docker build -t doors .
+$ docker build -t gorcomcomputing/doors .
 ```
 Docker Hub
 ```
