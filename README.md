@@ -52,6 +52,7 @@
 - [MQL](https://github.com/GorComComputing/knowledge/blob/main/finance.md)
 #### Hardware
 - [CUDA](https://github.com/GorComComputing/knowledge/blob/main/cuda.md)
+- [Моя сеть](https://github.com/GorComComputing/knowledge/blob/main/mynet.md)
 #### Другие ссылки
 - [Ссылки](https://github.com/GorComComputing/knowledge/blob/main/links.md)
 
