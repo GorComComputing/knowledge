@@ -56,6 +56,8 @@
 #### Сеть
 - [Моя сеть](https://github.com/GorComComputing/knowledge/blob/main/mynet.md)
 - [OpenSSL](https://github.com/GorComComputing/knowledge/blob/main/openssl.md)
+#### Инженерия ПО
+- [Jira](https://github.com/GorComComputing/knowledge/blob/main/jira.md)
 #### Другие ссылки
 - [Ссылки](https://github.com/GorComComputing/knowledge/blob/main/links.md)
 
