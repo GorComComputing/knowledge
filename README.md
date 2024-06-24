@@ -50,9 +50,12 @@
 - [Git](https://github.com/GorComComputing/knowledge/blob/main/git.md)
 #### Финансы
 - [MQL](https://github.com/GorComComputing/knowledge/blob/main/finance.md)
+- [Валюты](https://github.com/GorComComputing/knowledge/blob/main/currency.md)
 #### Hardware
 - [CUDA](https://github.com/GorComComputing/knowledge/blob/main/cuda.md)
+#### Сеть
 - [Моя сеть](https://github.com/GorComComputing/knowledge/blob/main/mynet.md)
+- [OpenSSL](https://github.com/GorComComputing/knowledge/blob/main/openssl.md)
 #### Другие ссылки
 - [Ссылки](https://github.com/GorComComputing/knowledge/blob/main/links.md)
 
