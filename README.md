@@ -58,6 +58,7 @@
 - [OpenSSL](https://github.com/GorComComputing/knowledge/blob/main/openssl.md)
 #### Инженерия ПО
 - [Jira](https://github.com/GorComComputing/knowledge/blob/main/jira.md)
+- [Bitbucket](https://github.com/GorComComputing/knowledge/blob/main/bitbucket.md)
 #### Другие ссылки
 - [Ссылки](https://github.com/GorComComputing/knowledge/blob/main/links.md)
 
