@@ -12,6 +12,9 @@ $ sudo -i -u postgres
 # Запуск PostgreSQL
 $ psql
 
+# Запуск PostgreSQL сразу
+$ sudo -i -u postgres psql
+
 # Изменение пароля пользователя
 postgres=# ALTER ROLE postgres WITH PASSWORD 'postgres';
 
