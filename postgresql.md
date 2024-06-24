@@ -47,6 +47,12 @@ postgres=# create table users (Id serial primary key, Name character varying(30)
 # Отобразить таблицы
 postgres=# \dt
 
+# Удалить базу данных
+postgres=# DROP DATABASE <Имя базы данных>;
+
+# Переименовать базу данных
+postgres=# ALTER DATABASE имя RENAME TO новое_имя;
+
 # Подключение к базе 
 postgres=# \c test2
 # Создание базы
