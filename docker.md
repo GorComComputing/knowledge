@@ -78,7 +78,21 @@ $ docker login -u "user-name" -p "password" docker.io
 $ docker push gorcomcomputing/doors
 
 ```
-Docker Compose
+Установка Docker Compose
+```
+# Загрузка и установка Docker Compose
+$ sudo curl -L "https://github.com/docker/compose/releases/download/v2.17.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+$ sudo chmod +x /usr/local/bin/docker-compose
+
+# Проверка версии Docker Compose
+$ docker-compose --version
+
+# Настройка прав доступа
+$ sudo groupadd docker
+$ sudo usermod -aG docker $USER
+$ newgrp docker
+```
+Команды Docker Compose
 ```
 # Собрать и запустить контейнеры
 $ docker-compose up -d
