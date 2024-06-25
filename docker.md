@@ -80,5 +80,7 @@ $ docker push gorcomcomputing/doors
 ```
 Docker Compose
 ```
+# Собрать и запустить контейнеры
+$ docker-compose up -d
 
 ```
