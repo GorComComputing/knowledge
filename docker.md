@@ -32,6 +32,8 @@ $ docker images
 
 # Удалить образ
 $ docker rmi 3b98ea9641a0
+# Удалить ВСЕ образы
+$ docker rmi $(docker images -q)
 
 # Скачивает образ busybox из регистра Докера и сохраняет его локально
 $ docker pull busybox
@@ -56,6 +58,8 @@ $ docker ps -a
 $ docker rm 305297d7a235 ff0a5c3750b9
 # Удалить ВСЕ завершенные контейнеры
 $ docker rm $(docker ps -a -q -f status=exited)
+# Удалить ВООБЩЕ ВСЕ контейнеры
+$ docker rm -f $(docker ps -aq)
 
 # По имени контейнера
 $(docker container ls  | grep 'container-name' | awk '{print $1}')
