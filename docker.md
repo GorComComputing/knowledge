@@ -105,4 +105,7 @@ $ newgrp docker
 # Собрать и запустить контейнеры
 $ docker-compose up -d
 
+# Останавливает все контейнеры Docker Compose (-v Удаляет также тома данных, созданные контейнерами)
+$ docker-compose down -v
+
 ```
