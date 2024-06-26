@@ -66,6 +66,11 @@ $(docker container ls  | grep 'container-name' | awk '{print $1}')
 
 # Просмотреть логи контейнера
 $ docker logs e74f6f093a12
+
+# Просмотреть привязку портов
+# 5432/tcp -> 0.0.0.0:5433
+# порт 5433 на хосте перенаправлен на порт 5432 внутри контейнера
+$ docker port e74f6f093a12
 ```
 Dockerfile
 ```
