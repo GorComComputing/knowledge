@@ -63,6 +63,9 @@ $ docker rm -f $(docker ps -aq)
 
 # По имени контейнера
 $(docker container ls  | grep 'container-name' | awk '{print $1}')
+
+# Просмотреть логи контейнера
+$ docker logs e74f6f093a12
 ```
 Dockerfile
 ```
