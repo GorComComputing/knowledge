@@ -73,7 +73,7 @@ $ docker logs e74f6f093a12
 $ docker port e74f6f093a12
 
 # Зайти в базу данных PostgreSQL в Docker-контейнере
-$ psql -h localhost -p 8082 -U myuser -d Market
+$ psql -h localhost -p 8082 -U user -d Market
 ```
 Dockerfile
 ```
