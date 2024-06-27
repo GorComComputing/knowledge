@@ -121,3 +121,6 @@ postgres=# SELECT datname,usename,client_addr,client_port FROM pg_stat_activity;
 # Узнать активность пользователя
 postgres=# SELECT datname FROM pg_stat_activity WHERE usename = 'postgres';
 ```
+```
+Чтобы в psql выйти из режима ПЕЙДЖЕР, когда выводится (END), нужно нажать 'q'
+```
