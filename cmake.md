@@ -13,5 +13,7 @@ $ cmake --version
 $ sudo mv /usr/bin/cmake /usr/bin/cm
 
 # Запуск CMake
-$ cm
+$ mkdir build
+$ cd build
+$ cm ..
 ```
