@@ -2,7 +2,6 @@
 - [Bash](https://github.com/GorComComputing/knowledge/blob/main/bash.md)
 - [Tcl](https://github.com/GorComComputing/knowledge/blob/main/tcl.md)
 - [Vim](https://github.com/GorComComputing/knowledge/blob/main/vim.md)
-- [Make](https://github.com/GorComComputing/knowledge/blob/main/make.md)
 - [Man](https://github.com/GorComComputing/knowledge/blob/main/man.md)
 - [CURL](https://github.com/GorComComputing/knowledge/blob/main/curl.md)
 - [LXC](https://github.com/GorComComputing/knowledge/blob/main/lxc.md)
@@ -27,6 +26,8 @@
 - [Linux iMX6ULL-NANO-2E](https://github.com/GorComComputing/knowledge/blob/main/linux_imx6ull_nano_2e.md)
 - [gpsd](https://github.com/GorComComputing/knowledge/blob/main/gpsd.md)
 #### Программирование
+- [Make](https://github.com/GorComComputing/knowledge/blob/main/make.md)
+- [CMake](https://github.com/GorComComputing/knowledge/blob/main/cmake.md)
 - [Rust](https://github.com/GorComComputing/knowledge/blob/main/rust.md)
 - [Go](https://github.com/GorComComputing/knowledge/blob/main/go.md)
 - [C](https://github.com/GorComComputing/knowledge/blob/main/c.md)
