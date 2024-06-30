@@ -109,6 +109,9 @@ $ newgrp docker
 ```
 Команды Docker Compose
 ```
+# Полностью пересобрать контейнер
+$ docker-compose build --pull --no-cache
+
 # Собрать и запустить контейнеры
 $ docker-compose up -d
 
