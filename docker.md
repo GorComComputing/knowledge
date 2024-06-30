@@ -115,4 +115,8 @@ $ docker-compose up -d
 # Останавливает все контейнеры Docker Compose (-v Удаляет также тома данных, созданные контейнерами)
 $ docker-compose down -v
 
+# Выполнить команду внутри контейнера 
+# Войти в консоль контейнера
+$ docker-compose exec dev-container bash
+
 ```
