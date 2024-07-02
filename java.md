@@ -22,7 +22,7 @@ $ mvn -v
 $ mvn archetype:generate -DgroupId=com.example -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 
 # Сборка проекта создаст файл JAR в директории target под именем my-app-1.0-SNAPSHOT.jar
-$ mvn package
+$ mvn clean package
 
 # Запуск скомпилированного приложения
 $ java -cp target/my-app-1.0-SNAPSHOT.jar com.example.App
