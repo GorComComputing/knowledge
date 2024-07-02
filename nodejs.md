@@ -1,5 +1,14 @@
 #### Node.js
 
+```
+# Установка nodejs и npm
+$ sudo apt update
+$ sudo apt install nodejs npm
+
+# Проверка работоспособности
+$ node -v
+$ npm -v
+```
 
 
 ```bash
