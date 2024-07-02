@@ -46,6 +46,7 @@
 - [Node.js](https://github.com/GorComComputing/knowledge/blob/main/nodejs.md)
 - [Chrome](https://github.com/GorComComputing/knowledge/blob/main/chrome.md)
 - [Wasm](https://github.com/GorComComputing/knowledge/blob/main/wasm.md)
+- [SCSS](https://github.com/GorComComputing/knowledge/blob/main/scss.md)
 #### DevOps
 - [Docker](https://github.com/GorComComputing/knowledge/blob/main/docker.md)
 - [Git](https://github.com/GorComComputing/knowledge/blob/main/git.md)
