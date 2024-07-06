@@ -9,6 +9,9 @@ $ php -v
 
 # Запуск веб-сервера
 $ php -S localhost:8000
+
+# Запуск в терминале
+$ php index.php
 ```
 index.php
 ```
