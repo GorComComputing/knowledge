@@ -116,4 +116,22 @@ $ sudo systemctl status tomcat
 
 # Добавьте службу в автозагрузку, чтобы Tomcat стартовал вместе с запуском системы
 $  sudo systemctl enable tomcat
+
+# Настройка доступа через веб-интерфейс
+$ sudo nano /opt/tomcat/conf/tomcat-users.xml
+# Очистить содержимое файла и добавить следующие строки
+
+<tomcat-users>
+<role rolename="admin-gui"/>
+<role rolename="manager-gui"/>
+<user username="admin" password="admin" roles="admin-gui,manager-gui"/>
+</tomcat-users>
+
+# Измени строку в файле
+$ sudo nano /opt/tomcat/webapps/manager/META-INF/context.xml
+# и в файле
+$ sudo nano /opt/tomcat/webapps/host-manager/META-INF/context.xml
+
+<Valve className="org.apache.catalina.valves.RemoteAddrValve"
+allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1|10.10.10.*" />
 ```
