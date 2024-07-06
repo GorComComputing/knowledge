@@ -135,3 +135,9 @@ $ sudo nano /opt/tomcat/webapps/host-manager/META-INF/context.xml
 <Valve className="org.apache.catalina.valves.RemoteAddrValve"
 allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1|10.10.10.*" />
 ```
+```
+# Остановка и запуск Tomcat
+$ sudo /opt/tomcat/bin/shutdown.sh
+$ sudo /opt/tomcat/bin/startup.sh
+
+```
