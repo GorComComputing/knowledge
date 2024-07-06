@@ -34,7 +34,7 @@
 - [Free Pascal](https://github.com/GorComComputing/knowledge/tree/main/pascal)
 - [Java](https://github.com/GorComComputing/knowledge/blob/main/java.md)
 - [Python](https://github.com/GorComComputing/knowledge/blob/main/python.md)
-- [PHP](https://github.com/GorComComputing/knowledge/blob/main/PHP.md)
+- [PHP](https://github.com/GorComComputing/knowledge/blob/main/php.md)
 #### Базы данных
 - [SQL](https://github.com/GorComComputing/knowledge/blob/main/sql.md)
 - [PostgreSQL](https://github.com/GorComComputing/knowledge/blob/main/postgresql.md)
