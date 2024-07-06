@@ -54,3 +54,8 @@ $ java -cp target/my-app-1.0-SNAPSHOT.jar com.example.App
 </project>
 
 ```
+
+```
+# Это создаст файлы mvnw и mvnw.cmd в корне вашего проекта (нужны для Docker)
+$ mvn -N io.takari:maven:wrapper
+```
