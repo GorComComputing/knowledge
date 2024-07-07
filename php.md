@@ -35,3 +35,32 @@ $age = $argv[2];
 echo "Hello, my name is $name and I am $age years old.\n";
 ?>
 ```
+Composer
+```
+# Установка
+$ php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+# Проверка хэша установочного файла
+# Замените 'expected-hash-value' на актуальное значение
+$ php -r "if (hash_file('sha384', 'composer-setup.php') === 'expected-hash-value') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+
+# Запуск установки
+$ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+
+# Удаление установочного файла
+$ php -r "unlink('composer-setup.php');"
+
+# Проверка установки Composer
+$ composer --version
+
+# Создание проекта
+# Создать файл composer.json, затем выполнить команду
+$ composer install
+```
+composer.json
+```
+{
+    "require": {
+        "monolog/monolog": "^2.3"
+    }
+}
+```
