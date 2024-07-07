@@ -2,7 +2,7 @@
 ```
 # Установка
 $ sudo apt update
-$ sudo apt install php
+$ sudo apt install php php-pgsql
 
 # Проверка установки
 $ php -v
