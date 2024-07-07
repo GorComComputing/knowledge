@@ -31,7 +31,7 @@
 - [Rust](https://github.com/GorComComputing/knowledge/blob/main/rust.md)
 - [Go](https://github.com/GorComComputing/knowledge/blob/main/go.md)
 - [C](https://github.com/GorComComputing/knowledge/blob/main/c.md)
-- [Free Pascal](https://github.com/GorComComputing/knowledge/tree/main/pascal)
+- [Free Pascal](https://github.com/GorComComputing/knowledge/tree/main/pascal.md)
 - [Java](https://github.com/GorComComputing/knowledge/blob/main/java.md)
 - [Python](https://github.com/GorComComputing/knowledge/blob/main/python.md)
 - [PHP](https://github.com/GorComComputing/knowledge/blob/main/php.md)
