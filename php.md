@@ -12,6 +12,8 @@ $ php -S localhost:8000
 
 # Запуск в терминале
 $ php script.php John 25
+
+
 ```
 index.php
 ```
