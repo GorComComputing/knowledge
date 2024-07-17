@@ -38,4 +38,7 @@ $ aws s3 ls
 
 # Список файлов в бакете
 $ aws s3 ls s3://my-new-bucket
+
+# Удаление файла из S3
+$ aws s3 rm s3://my-new-bucket/myfile.txt
 ```
