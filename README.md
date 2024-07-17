@@ -52,6 +52,7 @@
 #### DevOps
 - [Docker](https://github.com/GorComComputing/knowledge/blob/main/docker.md)
 - [Git](https://github.com/GorComComputing/knowledge/blob/main/git.md)
+- [AWS](https://github.com/GorComComputing/knowledge/blob/main/aws.md)
 #### Финансы
 - [MQL](https://github.com/GorComComputing/knowledge/blob/main/finance.md)
 - [Валюты](https://github.com/GorComComputing/knowledge/blob/main/currency.md)
