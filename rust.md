@@ -39,3 +39,9 @@ $ cargo check
 # Сборка релиза (с оптимизацией)
 $ cargo build --release
 ```
+
+```
+# Для сборки ядра ОС
+$ cargo build -Zbuild-std=core,compiler_builtins --target x86_64-os.json
+
+```
