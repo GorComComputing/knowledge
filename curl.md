@@ -29,4 +29,10 @@ $ curl -o custom_file.tar.gz https://testdomain.com/testfile.tar.gz
 
 # Игнорирование ошибки неправильных или самоподписанных сертификатов
 $ curl -k https://localhost/my_test_endpoint
+
+$ curl -k -X POST https://pay4partner.ru:8080/v1/admin/users/18 \
+    -H "Content-Type: application/json" \
+    -H "Authorization: YOUR_TOKEN_HERE" \
+    -d '{"key":"value"}'
+
 ```
