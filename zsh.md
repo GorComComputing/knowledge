@@ -15,6 +15,8 @@ $ chsh -s $(which zsh)
 
 # Установите Powerlevel10k
 $ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+# Установить шрифты Nerd Fonts
+$ sudo apt install fonts-powerline
 
 # Откройте файл ~/.zshrc и замените строку с темой на
 # ZSH_THEME="powerlevel10k/powerlevel10k"
