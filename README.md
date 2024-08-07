@@ -1,5 +1,6 @@
 #### Linux
 - [Bash](https://github.com/GorComComputing/knowledge/blob/main/bash.md)
+- [Zsh](https://github.com/GorComComputing/knowledge/blob/main/zsh.md)
 - [Tcl](https://github.com/GorComComputing/knowledge/blob/main/tcl.md)
 - [Vim](https://github.com/GorComComputing/knowledge/blob/main/vim.md)
 - [Man](https://github.com/GorComComputing/knowledge/blob/main/man.md)
