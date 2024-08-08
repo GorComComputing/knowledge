@@ -21,7 +21,9 @@ $ sudo apt install fonts-powerline
 # Откройте файл ~/.zshrc и замените строку с темой на
 # ZSH_THEME="powerlevel10k/powerlevel10k"
 $ nano ~/.zshrc
-
+```
+Перенос путей PATH из Bash
+```
 # Перенос путей - скопировать подобные строки 
 $ nano ~/.bashrc
 
@@ -35,4 +37,16 @@ $ source ~/.zshrc
 
 # Если нужен еще раз конфигуратор
 $ p10k configure
+```
+Разделение истории для каждой вкладки
+```
+# Отключить мгновенную запись истории команд
+$ unsetopt share_history
+
+# Сохранение истории при выходе из оболочки
+$ setopt append_history
+
+# Чтение истории при запуске
+$ setopt inc_append_history
+
 ```
