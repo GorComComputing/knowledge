@@ -10,4 +10,8 @@ $ sudo dpkg -i usbimager_1.0.4-amd64.deb
 $ /usr/bin/usbimager 
 ```
 [Ссылка на Imager Raspberry Pi OS](https://www.raspberrypi.com/software/) 
+```
+# Установка Imager после скачивания по ссылке
+$ sudo apt install rpi-imager
+```
 
