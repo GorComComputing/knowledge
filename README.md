@@ -59,6 +59,7 @@
 - [Валюты](https://github.com/GorComComputing/knowledge/blob/main/currency.md)
 #### Hardware
 - [CUDA](https://github.com/GorComComputing/knowledge/blob/main/cuda.md)
+- [CrowPi L](https://github.com/GorComComputing/knowledge/blob/main/crowpi_l.md)
 #### Сеть
 - [Моя сеть](https://github.com/GorComComputing/knowledge/blob/main/mynet.md)
 - [OpenSSL](https://github.com/GorComComputing/knowledge/blob/main/openssl.md)
