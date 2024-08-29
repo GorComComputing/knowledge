@@ -113,11 +113,12 @@ $ git push origin master
 $ git pull origin master    # Подтягиваем изменения из master
 $ git checkout deploy       # Переключаемся на ветку deploy
 $ git merge master          # Сливаем master в deploy
+
 # Разрешаем конфликты, если есть
 
 # Затем
-make
-git add .
-git commit -m "merge from master"
+$ make
+$ git add .
+$ git commit -m "merge from master"
 $ git push origin deploy    # Отправляем изменения в удаленный репозиторий
 ```
