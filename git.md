@@ -108,3 +108,16 @@ $ git rebase --continue
 # Отправить на удаленный репозиторий
 $ git push origin master
 ```
+Слияние веток в удаленном репозитории
+```
+$ git pull origin master    # Подтягиваем изменения из master
+$ git checkout deploy       # Переключаемся на ветку deploy
+$ git merge master          # Сливаем master в deploy
+# Разрешаем конфликты, если есть
+
+# Затем
+make
+git add .
+git commit -m "merge from master"
+$ git push origin deploy    # Отправляем изменения в удаленный репозиторий
+```
