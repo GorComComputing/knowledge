@@ -140,7 +140,7 @@ Serial Monitor:
 # sudo apt-get update
 # sudo apt-get install minicom
 
-#
+# Открыть монитор
 $ sudo minicom -b 9600 -D /dev/ttyUSB0
 
 # Чтобы выйти из minicom, нажмите Ctrl+A, затем Z, чтобы открыть меню команд, и затем X для выхода.
