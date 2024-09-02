@@ -91,7 +91,7 @@ $ avr-gcc -mmcu=atmega328p -Os -o blink.elf blink.c
 $ avr-objcopy -O ihex -R .eeprom blink.elf blink.hex
 
 # Используйте avrdude для загрузки программы
-$ avrdude -c arduino -p m328p -P /dev/ttyACM0 -b 115200 -U flash:w:blink.hex
+$ avrdude -c arduino -p m328p -P /dev/ttyUSB0 -b 115200 -U flash:w:blink.hex
 ```
 Диаграмма Карты Памяти ATmega328P:
 ```
@@ -133,4 +133,22 @@ $ avrdude -c arduino -p m328p -P /dev/ttyACM0 -b 115200 -U flash:w:blink.hex
 |        ...                    |
 | 0x03FF ---------------------> |
 +-------------------------------+
+```
+Serial Monitor:
+```
+# Установка minicom
+# sudo apt-get update
+# sudo apt-get install minicom
+
+#
+$ sudo minicom -b 9600 -D /dev/ttyUSB0
+
+# Чтобы выйти из minicom, нажмите Ctrl+A, затем Z, чтобы открыть меню команд, и затем X для выхода.
+# 
+# Если данные отображаются некорректно или вы хотите изменить параметры:
+#   1. Откройте меню команд с помощью Ctrl+A, затем Z.
+#   2. Выберите O для доступа к опциям конфигурации.
+#   3. Перейдите в "Serial port setup" для изменения параметров соединения.
+#   4. Проверьте параметры скорости, битов данных, стоп-битов и контроля четности.
+#   5. Вернитесь в главное меню и выберите Save setup as dfl для сохранения настроек по умолчанию.
 ```
