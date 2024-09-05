@@ -59,6 +59,7 @@
 - [Валюты](https://github.com/GorComComputing/knowledge/blob/main/currency.md)
 #### Hardware
 - [AVR](https://github.com/GorComComputing/knowledge/blob/main/avr.md)
+- [STM32](https://github.com/GorComComputing/knowledge/blob/main/stm32.md)
 - [CUDA](https://github.com/GorComComputing/knowledge/blob/main/cuda.md)
 - [CrowPi L](https://github.com/GorComComputing/knowledge/blob/main/crowpi_l.md)
 #### Сеть
