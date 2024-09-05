@@ -21,8 +21,8 @@ $ git clone https://github.com/hmchung/STM32F4_DISC_LIB.git
 # Сборка прошивки
 $ make
 
-# Прошивка
-$ st-flash write blink.bin 0x8000000
+# Прошивка ($ st-flash write blink.bin 0x8000000)
+$ make flash
 ```
 Makefile:
 ```
