@@ -13,7 +13,7 @@ $ sudo apt install stlink-tools
 # Библиотеки STM32 и HAL: 
 # Библиотеки аппаратной абстракции (HAL) для работы с периферией микроконтроллера. 
 # Их можно найти на официальном сайте STM32CubeF4 или установить с помощью STM32CubeMX.
-# 
+$ git clone https://github.com/hmchung/STM32F4_DISC_LIB.git
 
 ```
 
@@ -75,6 +75,34 @@ upload: build_fw
 .PHONY: clean
 clean:
 	rm -f *.o $(FW_NAME).elf $(FW_NAME).hex $(FW_NAME).bin
+```
+main.c:
+```
+#define USE_STDPERIPH_DRIVER
+#include "stm32f4xx.h"
+
+
+// 1ms second delay
+void ms_delay(int ms){
+    while (ms-- > 0) {
+        volatile int x = 5971;
+        while (x-- > 0) ("nop");
+    }
+}
+
+
+int main(void) {
+    RCC->AHB1ENR |= RCC_AHB1ENR_GPIODEN;  // enable the clock to GPIOD
+    
+    __asm("dsb");                         // wait till finished setup
+    
+    GPIOD->MODER = 85 << 24;
+    
+    for (;;) {
+        GPIOD->ODR ^= 15 << 12;     // toggle the pins
+        ms_delay(1000);
+    }
+}
 ```
 Проверка подключения платы STM32F4-Discovery
 ```
