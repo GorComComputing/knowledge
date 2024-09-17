@@ -62,6 +62,7 @@
 - [8088](https://github.com/GorComComputing/knowledge/blob/main/8088.md)
 - [AVR](https://github.com/GorComComputing/knowledge/blob/main/avr.md)
 - [STM32](https://github.com/GorComComputing/knowledge/blob/main/stm32.md)
+- [LCD1602](https://github.com/GorComComputing/knowledge/blob/main/lcd1602.md)
 - [CUDA](https://github.com/GorComComputing/knowledge/blob/main/cuda.md)
 - [CrowPi L](https://github.com/GorComComputing/knowledge/blob/main/crowpi_l.md)
 #### Сеть
