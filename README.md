@@ -65,6 +65,7 @@
 - [LCD1602](https://github.com/GorComComputing/knowledge/blob/main/lcd1602.md)
 - [CUDA](https://github.com/GorComComputing/knowledge/blob/main/cuda.md)
 - [CrowPi L](https://github.com/GorComComputing/knowledge/blob/main/crowpi_l.md)
+- [Logic Analizer](https://github.com/GorComComputing/knowledge/blob/main/logic_analizer.md)
 #### Сеть
 - [Моя сеть](https://github.com/GorComComputing/knowledge/blob/main/mynet.md)
 - [OpenSSL](https://github.com/GorComComputing/knowledge/blob/main/openssl.md)
